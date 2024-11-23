@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel's Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+    <script defer src="./app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bg-white">
+      <div
+        <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+      >
+        <span
+          class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white mt-4"
+        >
+          Gabriel Akoi
+        </span>
+        <button
+          id="hamburger-button"
+          type="button"
+          class="inline-flex items-center w-10 h-10"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5 mt-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div id="navbar-hamburger" class="bg-red">
+          <!-- Close Button -->
+          <button
+            id="close-button"
+            type="button"
+            class="absolute top-3 right-3 text-gray-500 hover:text-white"
+          >
+            <svg
+              class="w-6 h-6 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <!-- Menu Items -->
+          <ul class="flex flex-col font-medium mt-10 px-3 pt-10 ml-8">
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black hover:text-blue-600 text-lg"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <herosection
+        class="relative flex w-full py-2 shadow-dark-mild dark:bg-body-dark"
+        data-twe-navbar-ref
+      >
+      </herosection>
+
+      <div
+        class="relative h-[350px] overflow-hidden bg-[url('/public/images/image1.jpg')] bg-cover bg-[50%] bg-no-repeat"
+      >
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
+        >
+          <div class="flex h-full mt-20">
+            <div class="px-6 text-white md:px-12">
+              <h3 class="mt-5 mb-3 text-lg">Hi, I'm Gabriel Akoi</h3>
+              <h2 class="text-5xl font-semibold">I'm Full-stack</h2>
+              <h2 class="text-5xl font-semibold">Expert Developer</h2>
+              <button
+                type="button"
+                class="text-white bg-blue-700 font-medium hover:bg-black hover:text-white transition duration-300 rounded-lg text-sm px-5 py-1 me-2 mb-2 dark:bg-blue-600 flex items-center gap-2 mt-6"
+              >
+                About Me
+                <span class="mdi mdi-arrow-right-thin text-xl"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
