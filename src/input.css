@@ -20,10 +20,19 @@ body {
   box-shadow: -2px 0 5px rgba(224, 221, 221, 0.5);
   transition: right 0.9s ease-in-out;
   z-index: 1000;
-  
 }
 
 /* Show the navbar when active */
 #navbar-hamburger.active {
   right: 0;
+}
+
+@layer components {
+  .pop-up {
+    @apply transition-transform duration-500 ease-in-out transform;
+  }
+
+  .pop-up:hover {
+    @apply scale-105;
+  }
 }
