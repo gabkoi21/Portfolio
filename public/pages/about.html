@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <script defer src="../app.js"></script>
+    <title>About</title>
+  </head>
+  <body>
+    <!-- First Navbar -->
+    <nav class="flex justify-between items-center bg-blue-600">
+      <div class="flex flex-row space-x-10">
+        <p class="mx-5 text-white text-base">
+          <span class="mdi mdi-phone"></span>+321 776875972
+        </p>
+        <p class="text-gray-600">|</p>
+        <p class="mx-5 text-white text-base">gabakoi21@gmail.com</p>
+      </div>
+
+      <div class="flex flex-row space-x-8">
+        <a href="#" class="hover:underline mx-5 text-xl">
+          <span class="mdi mdi-facebook"></span>
+        </a>
+        <a href="#" class="hover:underline text-xl">
+          <span class="mdi mdi-twitter"></span>
+        </a>
+        <a href="#" class="hover:underline mx-5 text-xl">
+          <span class="mdi mdi-linkedin"></span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Second Navbar for the Menu -->
+    <nav class="bg-white">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+      >
+        <span
+          class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white mt-3 mx-10"
+        >
+          Gabriel Akoi
+        </span>
+        <button
+          id="hamburger-button"
+          type="button"
+          class="inline-flex items-center w-10 h-10"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5 mt-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <!-- Navbar Hamburger Menu -->
+        <div id="navbar-hamburger" class="bg-red">
+          <!-- Close Button -->
+          <button
+            id="close-button"
+            type="button"
+            class="absolute top-3 right-3 text-gray-500 hover:text-white"
+          >
+            <svg
+              class="w-6 h-6 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <!-- Menu Items -->
+          <ul class="flex flex-col font-medium mt-10 px-3 pt-10 ml-8">
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 text-black hover:text-blue-600 text-lg"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 text-black rounded hover:text-blue-600 text-lg"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <div
+        class="relative h-[350px] overflow-hidden bg-[url('/public/images/image4.jpg')] bg-cover bg-[50%] bg-no-repeat object-cover"
+      >
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
+        >
+          <div class="flex h-full mt-20">
+            <div class="px-6 text-white md:px-12 mt-20">
+              <h2 class="text-5xl font-semibold capitalize">About Me</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bio Section -->
+    <section class="bio-section mt-20" id="About">
+      <div
+        class="flex flex-col md:flex-row items-center gap-5 mt-10 mx-10 mb-10"
+      >
+        <!-- Bio Image -->
+        <img
+          class="w-[50%] md:w-1/2 h-auto mt-10 object-cover"
+          src="../images/image2.jpg"
+          alt="Gabriel Akoi"
+        />
+
+        <!-- Bio Information -->
+        <div class="px-5">
+          <h3 class="text-3xl font-semibold mt-10">Training & Certification</h3>
+          <p class="text-gray-700 text-base mt-5 items-center">
+            Trained in Full Stack Development with expertise in creating
+            responsive web and mobile applications, I specialize in front-end
+            and back-end technologies to deliver efficient, scalable, and
+            high-quality solutions.
+          </p>
+          <ul class="mt-5 space-y-4 text-gray-700">
+            <li>
+              <span class="mdi mdi-check text-blue-600 text-xl ml-10"></span>
+              Web Design and Development ODC & Orange
+            </li>
+            <li class="mt-3">
+              <span class="mdi mdi-check text-blue-600 text-xl ml-10"></span>
+              Backend Development - MoMo Open API
+            </li>
+            <li class="mt-3">
+              <span class="mdi mdi-check text-blue-600 text-xl ml-10"></span>
+              Backend Development - Cs Academy & Orange
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="mb-10 mt-20">
+      <div class="bg-blue-700 w-1/2 h-auto mx-auto p-6 text-white rounded-md">
+        <p class="mb-4 text-2xl md:text-3xl font-semibold">
+          Have any project in mind
+        </p>
+        <hr class="w-64 h-1 my-8 bg-gray-700 dark:bg-gray-700" />
+        <div class="flex flex-col md:flex-row justify-between">
+          <p class="text-sm mt-5">
+            Looking to bring your vision to life? Let's work together <br />
+            to make it happen!
+          </p>
+          <button
+            type="button"
+            class="px-5 py-1 bg-blue-500 rounded-md text-white hover:bg-blue-600 uppercase mt-5"
+          >
+            Hire Me
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-blue-600 mt-36">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Gabriel's Portfolio</span
+          >
+
+          <div>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="me-4 md:me-6 hover:text-white text-black capitalize"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/about.html"
+                  class="hover:text-white me-4 md:me-6 text-black capitalize"
+                  >About Me
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-white me-4 md:me-6 text-black capitalize"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white text-black capitalize"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- SOCIAL LINKS -->
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 mt-3"
+            >
+              <li>
+                <a
+                  href="https://web.facebook.com/"
+                  class="me-4 md:me-6 text-black"
+                  ><span class="mdi mdi-facebook text-2xl"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="me-4 md:me-6 text-black"
+                  ><span class="mdi mdi-twitter text-2xl"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/feed/"
+                  class="me-4 md:me-6 text-black"
+                  ><span class="mdi mdi-linkedin text-2xl"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-black"
+                  ><span class="mdi mdi-youtube text-2xl"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-700 sm:mx-auto text-black lg:my-8" />
+        <span class="block text-base sm:text-center text-black">
+          Copyright © 2024 All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
