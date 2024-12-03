@@ -36,4 +36,19 @@ body {
   .pop-up:hover {
     @apply scale-105;
   }
+
+  .primary-bg-color {
+    /* color: #020617; */
+    background: #020617;
+  }
+
+  .primary-color {
+    color: #020617;
+  }
+}
+
+/* Add a shadow to the navbar when scrolled */
+.navbar-scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }

@@ -12,8 +12,8 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
   </head>
-  <body>
-    <nav class="bg-white lg:sticky top-0 z-50">
+  <body id="header">
+    <nav class="bg-white lg:sticky top-0 z-50" id="navbar">
       <div
         class="max-w-screen-xl flex items-center justify-between mx-auto px-20 py-2 mt-3"
       >
@@ -33,9 +33,7 @@
             >
           </li>
           <li>
-            <a href="#about" class="block py-2 text-black hover:text-blue-600"
-              >About Me</a
-            >
+            <a href="#about" class="block py-2 text-black">About Me</a>
           </li>
           <li>
             <a
@@ -52,9 +50,13 @@
           <li>
             <a
               href="#contacts"
-              class="block py-2 text-black hover:text-blue-600"
-              >Contacts</a
+              class="block py-2 text-black hover:text-blue-600 border-b-2 border-transparent relative group font-bold"
             >
+              Contacts
+              <span
+                class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full group-hover:bg-black"
+              ></span>
+            </a>
           </li>
         </ul>
 
@@ -165,7 +167,7 @@
               <h2 class="text-5xl font-semibold">Expert Developer</h2>
               <button
                 type="button"
-                class="text-white bg-blue-600 font-medium hover:bg-black hover:text-white transition duration-300 rounded-lg text-sm px-5 py-1 me-2 mb-2 dark:bg-blue-600 flex items-center gap-2 mt-6"
+                class="text-white bg-blue-600 primary-gb-black font-medium hover:text-white transition duration-300 text-sm px-5 py-1 me-2 mb-2 flex items-center gap-2 mt-6"
               >
                 About Me
                 <span class="mdi mdi-arrow-right-thin text-xl"></span>
@@ -253,7 +255,7 @@
           What I do
         </h3>
 
-        <p class="mt-2 text-lg font-semibold text-blue-600">
+        <p class="mt-2 text-lg font-semibold primary-color">
           Create. Innovate. Elevate.
         </p>
       </div>
@@ -266,7 +268,7 @@
         >
           <div class="p-6">
             <div>
-              <span class="mdi mdi-laptop text-4xl text-blue-600"></span>
+              <span class="mdi mdi-laptop text-4xl primary-color"></span>
             </div>
             <h5 class="mb-2 text-xl font-semibold leading-tight mt-5">
               Web Development
@@ -275,11 +277,8 @@
               I create responsive, modern, and user-friendly websites tailored
               to your needs, ensuring seamless user experiences.
             </p>
-            <a
-              href="#"
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-600"
-            >
-              <span class="text-base font-medium hover:text-black"
+            <a href="#" class="flex items-center space-x-2 primary-color">
+              <span class="text-base font-medium primary-color"
                 >Learn more</span
               >
               <span class="mdi mdi-arrow-right-thin text-lg mt-1"></span>
@@ -292,7 +291,7 @@
           class="block bg-white shadow-md dark:bg-gray-800 dark:text-white mx-5 pop-up"
         >
           <div class="p-6">
-            <span class="mdi mdi-cellphone text-4xl text-blue-600"></span>
+            <span class="mdi mdi-cellphone text-4xl primary-color"></span>
 
             <h5 class="mb-2 text-xl font-semibold leading-tight mt-5">
               Mobile App Development
@@ -301,11 +300,8 @@
               Build feature-rich and scalable mobile applications for Android
               and iOS platforms, ensuring optimal performance.
             </p>
-            <a
-              href="#"
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-600"
-            >
-              <span class="text-base font-medium hover:text-black"
+            <a href="#" class="flex items-center space-x-2 primary-color">
+              <span class="text-base font-medium primary-color"
                 >Learn more</span
               >
               <span class="mdi mdi-arrow-right-thin text-lg mt-1"></span>
@@ -314,7 +310,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="block bg-blue-600 text-white shadow-md mx-5 pop-up">
+        <div class="block primary-bg-color text-white shadow-md mx-5 pop-up">
           <div class="p-6">
             <span class="mdi mdi-api text-4xl text-white"></span>
             <h5 class="mb-2 text-xl font-semibold leading-tight mt-5">
@@ -328,9 +324,7 @@
               href="#"
               class="flex items-center space-x-2 text-white hover:text-gray-200 mt-10"
             >
-              <span class="text-base font-medium hover:text-black"
-                >Learn more</span
-              >
+              <span class="text-base font-medium">Learn more</span>
               <span class="mdi mdi-arrow-right-thin text-lg mt-1"></span>
             </a>
           </div>
@@ -342,7 +336,7 @@
     <section class="flex justify-between gap-4 mx-24 mt-20" id="skills">
       <!-- Left Column -->
       <div class="flex flex-col gap-2 w-1/2">
-        <h3 class="capitalize font-semibold text-3xl text-blue-600">
+        <h3 class="capitalize font-semibold text-3xl primary-color">
           My Skills
         </h3>
         <p class="text-gray-700 text-base mt-3">
@@ -396,7 +390,7 @@
     </section>
 
     <!-- Form Section -->
-    <section class="px-2 mt-20 bg-white" id="contacts">
+    <section class="px-2 mt-20 bg-white" id="contacts ">
       <div class="hero-divflex flex gap-10 mx-20 bg-white shadow px-20 py-5">
         <!-- Contact Form Section -->
         <div class="form-div">
@@ -465,7 +459,7 @@
                 ></textarea>
                 <button
                   type="button"
-                  class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"
+                  class="bg-blue-600 text-white font-bold py-2 px-4"
                 >
                   Send Message
                 </button>
@@ -504,79 +498,125 @@
       </div>
     </section>
 
-    <footer class="bg-blue-600 mt-36">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Gabriel's Portfolio</span
-          >
+    <!-- This section for flooting button  -->
+    <section>
+      <button
+        type="button"
+        id="back-to-top"
+        class="fixed bottom-5 right-5 text-white primary-bg-color px-4 py-3"
+      >
+        <span class="mdi mdi-arrow-up-thin text-2xl"></span>
+      </button>
+    </section>
 
+    <!-- Footer container -->
+    <footer
+      class="bg-zinc-50 text-center text-white lg:text-left mt-20 primary-bg-color"
+    >
+      <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+      <div class="p-10 text-center md:text-left primary-bg-color">
+        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <!-- TW Elements section -->
+          <div class="">
+            <h6
+              class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
+            >
+              Gabriel Akoi Portfolio
+            </h6>
+            <div>
+              <p>Monrovia, Liberia</p>
+              <p>phone: <span>+231776875972</span></p>
+              <p>Email: <span>gabakoi18@gmail.com</span></p>
+              <p class="flex items-center">
+                <span class="mdi mdi-facebook"></span>
+                <span class="mdi mdi-facebook"></span>
+                <span class="mdi mdi-facebook"></span>
+                <span class="mdi mdi-facebook"></span>
+              </p>
+            </div>
+          </div>
+          <!-- Products section -->
           <div>
-            <ul
-              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
             >
-              <li>
-                <a
-                  href="./index.html"
-                  class="me-4 md:me-6 hover:text-white text-black capitalize"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./pages/about.html"
-                  class="hover:text-white me-4 md:me-6 text-black capitalize"
-                  >About Me
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-white me-4 md:me-6 text-black capitalize"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white text-black capitalize"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            <!-- SOCIAL LINKS -->
-            <ul
-              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 mt-3"
+              Navigations
+            </h6>
+            <p class="mb-4">
+              <a href="#!" class="text-white">Home</a>
+            </p>
+            <p class="mb-4">
+              <a href="#!" class="text-white">About Me</a>
+            </p>
+            <p class="mb-4">
+              <a href="#!" class="text-white">What I do</a>
+            </p>
+            <p class="mb-4">
+              <a href="#!" class="text-white">My skills</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Contacts</a>
+            </p>
+          </div>
+          <!-- Useful links section -->
+          <div>
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
             >
-              <li>
-                <a
-                  href="https://web.facebook.com/"
-                  class="me-4 md:me-6 text-black"
-                  ><span class="mdi mdi-facebook text-2xl"></span
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="me-4 md:me-6 text-black"
-                  ><span class="mdi mdi-twitter text-2xl"></span
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/feed/"
-                  class="me-4 md:me-6 text-black"
-                  ><span class="mdi mdi-linkedin text-2xl"></span
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="text-black"
-                  ><span class="mdi mdi-youtube text-2xl"></span
-                ></a>
-              </li>
-            </ul>
+              Services
+            </h6>
+            <p class="mb-4">
+              <a href="#!" class="text-white">Web Development</a>
+            </p>
+            <p class="mb-4">
+              <a href="#!" class="text-white">Mobile App Development</a>
+            </p>
+            <p class="mb-4">
+              <a href="#!" class="text-white">API Development</a>
+            </p>
+          </div>
+          <!-- Contact section -->
+          <div class="-pl-20">
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
+              My Newsletter
+            </h6>
+            <p class="text-sm mb-4 text-white">
+              Subscribe to my newsletter and receive the latest news about our
+              products and services!
+            </p>
+            <form class="mt-5">
+              <div class="mb-4">
+                <div class="flex shadow appearance-none w-full">
+                  <input
+                    class="flex-grow py-2 px-3 leading-tight focus:outline-none focus:ring-0"
+                    id="username"
+                    type="text"
+                    placeholder="Username"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-black text-white text-sm font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <hr class="my-6 border-gray-700 sm:mx-auto text-black lg:my-8" />
-        <span class="block text-base sm:text-center text-black">
-          Copyright © 2024 All Rights Reserved.</span
+      </div>
+
+      <!--Copyright section-->
+
+      <div class="primary-bg-color text-white p-6 text-center">
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span>© 2023 Copyright:</span>
+        <a class="font-semibold" href="https://tw-elements.com/"
+          >Gabriel Akoi</a
         >
       </div>
     </footer>
