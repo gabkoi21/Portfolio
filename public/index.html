@@ -12,17 +12,20 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
   </head>
-  <body id="header">
-    <nav class="bg-white lg:sticky top-0 z-50" id="navbar">
+
+    <body  id="header">
+      
+    </body>
+    <nav class="bg-white sticky lg:sticky top-0 z-50" id="navbar">
       <div
-        class="max-w-screen-xl flex items-center justify-between mx-auto px-20 py-2 mt-3"
+        class="max-w-screen-xl flex items-center justify-between lg:mx-auto px-5 py-2 mt-3"
       >
-        <span class="self-center text-3xl font-semibold dark:text-white">
+        <span class="text-2xl md:text-3xl font-semibold dark:text-white">
           Gabriel Akoi
-        </span>
+        </span> 
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex space-x-6 font-medium">
+        <ul class="hidden md:hidden lg:inline-flex space-x-6 font-medium">
           <li>
             <a
               href="#index.html"
@@ -65,7 +68,7 @@
         <button
           id="hamburger-button"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          class="inline-flex lg:hidden items-center h-10 text-gray-700 "
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -266,35 +269,31 @@
     <section class="services-section" id="services">
       <!-- Section Header -->
       <div class="sm:ml-3 mt-1 lg:mx-12 md:mx-12 xl:px-24 mx-10">
-        <h3 class="text-3xl xl:text-5xl md:text-2xl uppercase text-gray-300 mb-1 ">
+        <h3 class="text-2xl xl:text-xl md:text-2xl lg:text-2xl uppercase text-gray-300 mb-1 ">
           What I do
         </h3>
 
-        <p class="mt-2 text-lg  xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 ">
+        <p class="mt-2 text-lg  xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 mb-5 ">
           Create. Innovate. Elevate.
         </p>
       </div>
 
-      <!-- Services Grid -->
+
   <!-- Services Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10">
+<div class="grid grid-cols-1 md:max-xl:grid-cols-3 xl:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10">
   <!-- Card 1 -->
   <div class=" block bg-white shadow-md dark:bg-gray-800 dark:text-white  sm:mx-0  pop-up  xl:mx-5  xl:h-auto">
-    <div class="sm:p-6 lg:p-4 h-64 border  "> 
+    <div class="sm:p-6 lg:p-4 h-64 border "> 
       <div>
         <span class="mdi mdi-laptop px-3 md:px-2 md:text-1xl sm:text-4xl primary-color"></span>
       </div>
       <h5 class="mb-2 text-xl px-3 md:px-2 md:text-base xl:text-xl  font-semibold leading-tight mt-5 ">Web Development</h5>
-      <p class="mb-4  px-3 text-base xl:text-1xl  md:text-sm md:px-3 text-gray-600 dark:text-gray-300 ">
+      <p class="mb-4  px-3 text-base  xl:text-base  md:text-sm md:px-3 text-gray-600 dark:text-gray-300 ">
         I create responsive, modern, and user-friendly websites tailored to your needs, ensuring seamless user experiences.
       </p>
       
      </div>
-
-
-
   </div>
-
   <!-- Card 2 Section -->
   <div class="block bg-white shadow-md dark:bg-gray-800 dark:text-white  sm:mx-0  pop-up  xl:mx-5  xl:h-auto">
 
@@ -303,7 +302,7 @@
       <h5 class="mb-2 text-text-xl px-3 text-base xl:text-xl  md:text-base ml-30 font-semibold leading-tight mt-5 whitespace-nowrap">Mobile App Development</h5>
 
 
-      <p class="mb-4  px-3 text-base md:text-sm md:px-3 xl:text-1xl  text-gray-600 dark:text-gray-300  ">        
+      <p class="mb-4  px-3 text-base md:text-sm md:px-3 xl:text-base  text-gray-600 dark:text-gray-300  ">        
         Build feature-rich and scalable mobile applications for Android and iOS platforms, ensuring optimal performance.
       </p>
     
@@ -314,11 +313,11 @@
   <div class="block primary-bg-color text-white shadow-md  sm:mx-0 pop-up xl:mx-5 xl:h-auto">
 
 
-    <div  class="sm:p-6 lg:p-4 h-64 lg:mx:-20  border border-orange-400">
+    <div  class="sm:p-6 lg:p-4 h-64 lg:mx:-20  border ">
 
       <span class="mdi mdi-api  px-3 text-3xl sm:text-4xl text-white"></span>
       <h5 class="mb-2  px-3 text-xl  md:text-lg xl:text-xl  font-semibold leading-tight mt-5 whitespace-nowrap">API Development</h5>
-      <p class="mb-4 text-white p-1  xl:text-1xl  md:text-sm md:px-3 px-2 text-base ">
+      <p class="mb-4 text-white p-1  xl:text-base  md:text-sm md:px-3 px-2 text-base ">
         Building robust and scalable APIs that enable seamless communication between applications.
       </p>
     </div>
