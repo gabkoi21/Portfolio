@@ -2385,6 +2385,10 @@ body {
     width: 50%;
   }
 
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -2727,6 +2731,18 @@ body {
     height: 500px;
   }
 
+  .lg\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .lg\:h-\[470px\] {
+    height: 470px;
+  }
+
+  .lg\:h-\[475px\] {
+    height: 475px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2853,6 +2869,11 @@ body {
   .xl\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:mb-10 {
