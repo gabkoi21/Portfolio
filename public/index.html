@@ -12,16 +12,14 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
     />
   </head>
-
-  
-    <body id="header">
+  <body id="header">
     <nav class="bg-white sticky lg:sticky top-0 z-50" id="navbar">
       <div
         class="max-w-screen-xl flex items-center justify-between lg:mx-auto px-5 py-2 mt-3"
       >
         <span class="text-2xl md:text-3xl font-semibold dark:text-white">
           Gabriel Akoi
-        </span> 
+        </span>
 
         <!-- Desktop Menu -->
         <ul class="hidden md:hidden lg:inline-flex space-x-6 font-medium">
@@ -67,7 +65,7 @@
         <button
           id="hamburger-button"
           type="button"
-          class="inline-flex lg:hidden items-center h-10 text-gray-700 "
+          class="inline-flex lg:hidden items-center h-10 text-gray-700"
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -113,40 +111,69 @@
             />
           </svg>
         </button>
+
         <!-- Mobile/Tablet Menu Items -->
         <ul class="flex flex-col space-y-4 mt-16 px-6 text-lg">
           <li>
             <a
               href="#index.html"
-              class="block py-2 text-black hover:text-blue-600"
+              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
               >Home</a
             >
           </li>
           <li>
-            <a href="#about" class="block py-2 text-black hover:text-blue-600"
+            <a
+              href="#about"
+              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
               >About Me</a
             >
           </li>
           <li>
             <a
               href="#services"
-              class="block py-2 text-black hover:text-blue-600"
+              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
               >What I do</a
             >
           </li>
           <li>
-            <a href="#skills" class="block py-2 text-black hover:text-blue-600"
+            <a
+              href="#skills"
+              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
               >My Skills</a
             >
           </li>
           <li>
             <a
               href="#contacts"
-              class="block py-2 text-black hover:text-blue-600"
+              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
               >Contacts</a
             >
           </li>
         </ul>
+        <div
+          class="flex justify-center -ml-20 items-center gap-3 lg:justify-start sm:justify-start mt-5 md:ml-5"
+        >
+          <div
+            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+          >
+            <span class="mdi mdi-facebook md:text-xl"></span>
+          </div>
+          <div
+            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+          >
+            <span class="mdi mdi-twitter md:text-xl"></span>
+          </div>
+          <div
+            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+          >
+            <span class="mdi mdi-linkedin md:text-xl"></span>
+          </div>
+          <div
+            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+          >
+            <span class="mdi mdi-instagram md:text-xl"></span>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -158,23 +185,25 @@
       </herosection>
 
       <div
-        class="relative h-[350px] overflow-hidden bg-[url('/public/images/image1.jpg')] bg-cover bg-[50%] bg-no-repeat object-cover"
+        class="relative h-[350px] lg:h-[500px] md:h-[390px] overflow-hidden bg-[url('/public/images/image1.jpg')] bg-cover bg-[50%] bg-no-repeat object-cover"
       >
         <div
           class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
         >
           <div class="flex h-full mt-20">
             <div class="px-6 text-white md:px-12">
-              <h3 class="text-base sm:text-xl mt-5 mb-3">
+              <h3 class="text-base sm:text-2xl mt-5 mb-3 capitalize">
                 Hi, I'm Gabriel Akoi
               </h3>
-              <h2 class="text-2xl sm:text-5xl font-semibold">I'm Full-stack</h2>
-              <h2 class="text-3xl md:text-5xl font-semibold">
+              <h2 class="text-2xl sm:text-6xl font-semibold capitalize">
+                I'm Full-stack
+              </h2>
+              <h2 class="text-3xl md:text-6xl font-semibold capitalize">
                 Expert Developer
               </h2>
               <button
                 type="button"
-                class="text-white bg-blue-600 primary-gb-black font-medium hover:text-white transition duration-300 text-sm px-5 py-1 me-2 mb-2 flex items-center gap-2 mt-6"
+                class="text-white bg-blue-600 rounded-sm primary-gb-black font-medium hover:text-white transition duration-300 text-sm px-5 py-1 me-2 mb-2 flex items-center gap-2 mt-6"
               >
                 About Me
                 <span class="mdi mdi-arrow-right-thin text-xl"></span>
@@ -268,300 +297,370 @@
     <section class="services-section" id="services">
       <!-- Section Header -->
       <div class="sm:ml-3 mt-1 lg:mx-12 md:mx-12 xl:px-24 mx-10">
-        <h3 class="text-2xl xl:text-xl md:text-2xl lg:text-2xl uppercase text-gray-300 mb-1 ">
+        <h3
+          class="text-2xl xl:text-xl md:text-2xl lg:text-2xl uppercase text-gray-300 mb-1"
+        >
           What I do
         </h3>
 
-        <p class="mt-2 text-lg  xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 mb-5 ">
+        <p
+          class="mt-2 text-lg xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 mb-5"
+        >
           Create. Innovate. Elevate.
         </p>
       </div>
 
-
-  <!-- Services Grid -->
-<div class="grid grid-cols-1 md:max-xl:grid-cols-3 xl:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10">
-  <!-- Card 1 -->
-  <div class=" block bg-white shadow-md dark:bg-gray-800 dark:text-white  sm:mx-0  pop-up  xl:mx-5  xl:h-auto">
-    <div class="sm:p-6 lg:p-4 h-64 border "> 
-      <div>
-        <span class="mdi mdi-laptop px-3 md:px-2 md:text-1xl sm:text-4xl primary-color"></span>
-      </div>
-      <h5 class="mb-2 text-xl px-3 md:px-2 md:text-base xl:text-xl  font-semibold leading-tight mt-5 ">Web Development</h5>
-      <p class="mb-4  px-3 text-base  xl:text-base  md:text-sm md:px-3 text-gray-600 dark:text-gray-300 ">
-        I create responsive, modern, and user-friendly websites tailored to your needs, ensuring seamless user experiences.
-      </p>
-      
-     </div>
-  </div>
-  <!-- Card 2 Section -->
-  <div class="block bg-white shadow-md dark:bg-gray-800 dark:text-white  sm:mx-0  pop-up  xl:mx-5  xl:h-auto">
-
-    <div class="sm:p-6 lg:p-4 h-64 border ">
-      <span class="mdi mdi-cellphone px-3 text-3xl md:px-2 md:text-1xl sm:text-4xl primary-color"></span>
-      <h5 class="mb-2 text-text-xl px-3 text-base xl:text-xl  md:text-base ml-30 font-semibold leading-tight mt-5 whitespace-nowrap">Mobile App Development</h5>
-
-
-      <p class="mb-4  px-3 text-base md:text-sm md:px-3 xl:text-base  text-gray-600 dark:text-gray-300  ">        
-        Build feature-rich and scalable mobile applications for Android and iOS platforms, ensuring optimal performance.
-      </p>
-    
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="block primary-bg-color text-white shadow-md  sm:mx-0 pop-up xl:mx-5 xl:h-auto">
-
-
-    <div  class="sm:p-6 lg:p-4 h-64 lg:mx:-20  border ">
-
-      <span class="mdi mdi-api  px-3 text-3xl sm:text-4xl text-white"></span>
-      <h5 class="mb-2  px-3 text-xl  md:text-lg xl:text-xl  font-semibold leading-tight mt-5 whitespace-nowrap">API Development</h5>
-      <p class="mb-4 text-white p-1  xl:text-base  md:text-sm md:px-3 px-2 text-base ">
-        Building robust and scalable APIs that enable seamless communication between applications.
-      </p>
-    </div>
-  </div>
-</div>
-
-    <!-- Form Section -->
-    <section class="md:px-2 bg-white">
-      <div class="flex flex-col md:flex lg:flex-row xl:flex-row py-5 lg:mx-10 gap-10 px-10 md:mx-20 bg-white shadow mt-10 ">
-        <!-- Contact Form Section -->
-        <div class="form-div ">
-          <h2 class="text-base md:text-2xl font-bold xl:ml-20 mb-4 text-gray-700 uppercase whitespace-nowrap
-          ">
-            Contact Form
-          </h2> 
-          <form class="w-full xl:mx-20 ">
-            <div class="flex flex-wrap -mx-3 mb-1">
-              <div class="w-full md:w-1/2  px-3 mb:2 md:mb-0">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-first-name"
-                >
-                </label>
-                <input
-                  class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
-                  id="grid-first-name"
-                  type="text"
-                  placeholder="Name"
-                />
-              </div>
-
-              <div class="w-full md:w-1/2 lg:w-[50%]  px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-last-name"
-                >
-                </label>
-                <input
-                  class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
-                  type="email"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-
-            <div class="flex flex-wrap -mx-3 mb-1">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
-                >
-                </label>
-                <input
-                  class="appearance-none w-full text-sm text-gray-700 py-2 px-4  leading-tight focus:outline-none focus:ring-0"
-                  id="grid-password"
-                  type="text"
-                  placeholder="Subject"
-                />
-              </div>
-            </div>
-
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="subject"
-                >
-                </label>
-                <textarea
-                  class="appearance-none w-full text-sm text-gray-700 py-2 xl:py-10 md:py-10 px-4 md:mb-3 leading-tight focus:outline-none focus:ring-0"
-                  id="subject"
-                  name="subject"
-                  rows="4"
-                  placeholder="Your Message..."
-                ></textarea>
-                <button
-                  type="button"
-                  class="bg-blue-600 text-white font-semibold py-2 px-4"
-                >
-                  Send Message
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <!-- Contact Address Section -->
-        <div class="w-full md:w-full xl:w-[60%] -mt-10 lg:mt-1 xl:ml-20">
-          <!-- Heading outside the border -->
-          <h2 class="text-base md:text-2xl font-bold mb-4 uppercase text-gray-700 whitespace-nowrap">
-            Contact Address
-          </h2>
-
-          <div class="Contact-div border p-6 xl:p-10  mt-6">
-            <div class="flex mb-4 gap-5 items-center">
-              <!-- <span class="mdi mdi-map-marker text-xl"></span> -->
-              <div class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10">
-                <span class="mdi mdi-map-marker text-white text-xl"></span>
-              </div>
-              <p class="capitalize text-base lg:text-1xl">Airfild Sinkor Monrovia</p>
-            </div>
-
-            <div class="flex mb-4 gap-5 items-center">
-              <!-- <span class="mdi mdi-email-outline text-xl"></span> -->
-              <div class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10">
-                <span class="mdi mdi-email-outline text-white text-xl"></span>
-              </div>
-              
-              <p class="text-base lg:text-1xl">gabakoi18@gmail.com</p>
-            </div>
-
-            <div class="flex mb-4 gap-5">
-              <!-- <span class="mdi mdi-phone mt-2 text-xl"></span> -->
-              <div class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10">
-                <span class="mdi mdi-phone text-white text-xl"></span>
-              </div>
-              
-              <div>
-                <p  class="text-base lg:text-1xl">07777878972</p>
-                <p  class=" text-base lg:text-1xl">07777878972</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- This section for flooting button  -->
-    <section>
-      <button
-        type="button"
-        id="back-to-top"
-        class="fixed bottom-5 right-5 text-white bg-blue-600 px-2 py-1"
+      <!-- Services Grid -->
+      <div
+        class="grid grid-cols-1 md:max-xl:grid-cols-3 xl:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10"
       >
-        <span class="mdi mdi-chevron-up text-3xl"></span>
-      </button>
-    </section>
-
-    <!-- Footer container -->
-    <footer
-      class="bg-zinc-50 text-center text-white lg:text-left mt-20 primary-bg-color"
-    >
-      <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-      <div class="p-10 text-center md:text-left primary-bg-color">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <!-- TW Elements section -->
-          <div class="">
-            <h6
-              class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
-            >
-              Gabriel Akoi Portfolio
-            </h6>
+        <!-- Card 1 -->
+        <div
+          class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+        >
+          <div class="sm:p-6 lg:p-4 h-64 border">
             <div>
-              <p class="mb-4">Airfild Monrovia, Liberia</p>
-              <p class="mb-4">phone: <span>+231776875972</span></p>
-              <p class="mb-4">Email: <span>gabakoi18@gmail.com</span></p>
-              <p class="flex items-center gap-3">
-                <span class="mdi mdi-facebook border-2"></span>
-                <span class="mdi mdi-facebook"></span>
-                <span class="mdi mdi-facebook"></span>
-                <span class="mdi mdi-facebook"></span>
-              </p>
+              <span
+                class="mdi mdi-laptop px-3 md:px-2 md:text-1xl sm:text-4xl primary-color"
+              ></span>
             </div>
-          </div>
-          <!-- Products section -->
-          <div>
-            <h6
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            <h5
+              class="mb-2 text-xl px-3 md:px-2 md:text-base xl:text-xl font-semibold leading-tight mt-5"
             >
-              Navigations
-            </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-white">Home</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-white">About Me</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-white">What I do</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-white">My skills</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Contacts</a>
+              Web Development
+            </h5>
+            <p
+              class="mb-4 px-3 text-base xl:text-base md:text-sm md:px-3 text-gray-600 dark:text-gray-300"
+            >
+              I create responsive, modern, and user-friendly websites tailored
+              to your needs, ensuring seamless user experiences.
             </p>
           </div>
-          <!-- Useful links section -->
-          <div>
-            <h6
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+        </div>
+        <!-- Card 2 Section -->
+        <div
+          class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+        >
+          <div class="sm:p-6 lg:p-4 h-64 border">
+            <span
+              class="mdi mdi-cellphone px-3 text-3xl md:px-2 md:text-1xl sm:text-4xl primary-color"
+            ></span>
+            <h5
+              class="mb-2 text-text-xl px-3 text-base xl:text-xl md:text-base ml-30 font-semibold leading-tight mt-5 whitespace-nowrap"
             >
-              Services
-            </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-white">Web Development</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-white">Mobile App Development</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-white">API Development</a>
+              Mobile App Development
+            </h5>
+
+            <p
+              class="mb-4 px-3 text-base md:text-sm md:px-3 xl:text-base text-gray-600 dark:text-gray-300"
+            >
+              Build feature-rich and scalable mobile applications for Android
+              and iOS platforms, ensuring optimal performance.
             </p>
           </div>
-          <!-- Contact section -->
-          <div class="-pl-20">
-            <h6
-              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="block primary-bg-color text-white shadow-md sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+        >
+          <div class="sm:p-6 lg:p-4 h-64 lg:mx:-20 border">
+            <span
+              class="mdi mdi-api px-3 text-3xl sm:text-4xl text-white"
+            ></span>
+            <h5
+              class="mb-2 px-3 text-xl md:text-lg xl:text-xl font-semibold leading-tight mt-5 whitespace-nowrap"
             >
-              My Newsletter
-            </h6>
-            <p class="text-sm mb-4 text-white">
-              Subscribe to my newsletter and receive the latest news about our
-              products and services!
+              API Development
+            </h5>
+            <p
+              class="mb-4 text-white p-1 xl:text-base md:text-sm md:px-3 px-2 text-base"
+            >
+              Building robust and scalable APIs that enable seamless
+              communication between applications.
             </p>
-            <form class="mt-5">
-              <div class="mb-4">
-                <div class="flex shadow appearance-none w-full">
-                  <input
-                    class="flex-grow py-2 px-3 leading-tight focus:outline-none focus:ring-0"
-                    id="username"
-                    type="text"
-                    placeholder="Username"
-                  />
-                  <button
-                    type="submit"
-                    class="bg-black text-white text-sm font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline"
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <section class="md:px-2 bg-white">
+        <div
+          class="flex flex-col md:flex lg:flex-row xl:flex-row py-5 lg:mx-10 gap-10 px-10 md:mx-20 bg-white shadow mt-10"
+        >
+          <!-- Contact Form Section -->
+          <div class="form-div">
+            <h2
+              class="text-base md:text-2xl font-bold xl:ml-20 mb-4 text-gray-700 uppercase whitespace-nowrap"
+            >
+              Contact Form
+            </h2>
+            <form class="w-full xl:mx-20">
+              <div class="flex flex-wrap -mx-3 mb-1">
+                <div class="w-full md:w-1/2 px-3 mb:2 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
                   >
-                    Subscribe
+                  </label>
+                  <input
+                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                    id="grid-first-name"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </div>
+
+                <div class="w-full md:w-1/2 lg:w-[50%] px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap -mx-3 mb-1">
+                <div class="w-full px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                  </label>
+                  <input
+                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                    id="grid-password"
+                    type="text"
+                    placeholder="Subject"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="subject"
+                  >
+                  </label>
+                  <textarea
+                    class="appearance-none w-full text-sm text-gray-700 py-2 xl:py-10 md:py-10 px-4 md:mb-3 leading-tight focus:outline-none focus:ring-0"
+                    id="subject"
+                    name="subject"
+                    rows="4"
+                    placeholder="Your Message..."
+                  ></textarea>
+                  <button
+                    type="button"
+                    class="bg-blue-600 text-white font-semibold py-2 px-4"
+                  >
+                    Send Message
                   </button>
                 </div>
               </div>
             </form>
           </div>
+
+          <!-- Contact Address Section -->
+          <div class="w-full md:w-full xl:w-[60%] -mt-10 lg:mt-1 xl:ml-20">
+            <!-- Heading outside the border -->
+            <h2
+              class="text-base md:text-2xl font-bold mb-4 uppercase text-gray-700 whitespace-nowrap"
+            >
+              Contact Address
+            </h2>
+
+            <div class="Contact-div border p-6 xl:p-10 mt-6">
+              <div class="flex mb-4 gap-5 items-center">
+                <!-- <span class="mdi mdi-map-marker text-xl"></span> -->
+                <div
+                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                >
+                  <span class="mdi mdi-map-marker text-white text-xl"></span>
+                </div>
+                <p class="capitalize text-base lg:text-1xl">
+                  Airfild Sinkor Monrovia
+                </p>
+              </div>
+
+              <div class="flex mb-4 gap-5 items-center">
+                <!-- <span class="mdi mdi-email-outline text-xl"></span> -->
+                <div
+                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                >
+                  <span class="mdi mdi-email-outline text-white text-xl"></span>
+                </div>
+
+                <p class="text-base lg:text-1xl">gabakoi18@gmail.com</p>
+              </div>
+
+              <div class="flex mb-4 gap-5">
+                <!-- <span class="mdi mdi-phone mt-2 text-xl"></span> -->
+                <div
+                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                >
+                  <span class="mdi mdi-phone text-white text-xl"></span>
+                </div>
+
+                <div>
+                  <p class="text-base lg:text-1xl">07777878972</p>
+                  <p class="text-base lg:text-1xl">07777878972</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!--Copyright section-->
-      <div class="primary-bg-color text-white p-6 text-center">
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <span>© 2023 Copyright:</span>
-        <a class="font-semibold" href="https://tw-elements.com/"
-          >Gabriel Akoi</a>
-      </div>
-    </footer>
-    </body>
+      </section>
+
+      <!-- This section for flooting button  -->
+      <section>
+        <!-- <button -->
+        <button
+          type="button"
+          id="back-to-top"
+          class="fixed bottom-5 right-5 text-white bg-blue-600 px-2 py-1"
+        >
+          <span class="mdi mdi-chevron-up text-3xl"></span>
+        </button>
+      </section>
+
+      <!-- Footer container -->
+      <footer
+        class="bg-zinc-50 text-center text-white lg:text-left mt-20 primary-bg-color"
+      >
+        <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+        <div class="p-10 text-center md:text-left primary-bg-color">
+          <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:mx-3">
+            <div class="">
+              <h6
+                class="mb-6 text-2xl flex items-center justify-center font-semibold capitalize md:justify-start"
+              >
+                Gabriel Akoi Portfolio
+              </h6>
+              <div>
+                <p class="mb-4">Airfild Monrovia, Liberia</p>
+                <p class="mb-4">phone: <span>+231776875972</span></p>
+                <p class="mb-4">Email: <span>gabakoi18@gmail.com</span></p>
+              </div>
+              <!-- Buttons Section -->
+
+              <div
+                class="flex justify-center items-center gap-3 lg:justify-start sm:justify-start"
+              >
+                <div
+                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                >
+                  <span class="mdi mdi-facebook"></span>
+                </div>
+                <div
+                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                >
+                  <span class="mdi mdi-twitter"></span>
+                </div>
+                <div
+                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                >
+                  <span class="mdi mdi-linkedin"></span>
+                </div>
+                <div
+                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                >
+                  <span class="mdi mdi-instagram"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Products section -->
+            <div>
+              <h6
+                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+              >
+                Navigations
+              </h6>
+              <p class="mb-4">
+                <a href="#!" class="text-white">Home</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white">About Me</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white">What I do</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white">My skills</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Contacts</a>
+              </p>
+            </div>
+            <!-- Useful links section -->
+            <div>
+              <h6
+                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+              >
+                Services
+              </h6>
+              <p class="mb-4">
+                <a href="#!" class="text-white">Web Development</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white">Mobile App Development</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!" class="text-white">API Development</a>
+              </p>
+            </div>
+            <!-- Contact section -->
+            <div class="-pl-20">
+              <h6
+                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+              >
+                My Newsletter
+              </h6>
+              <p class="text-base sm:text-sm mb-4 text-white lg:text-1xl">
+                Subscribe to my newsletter and receive the latest news about our
+                products and services!
+              </p>
+              <form class="mt-5">
+                <div class="mb-4">
+                  <div class="flex shadow appearance-none w-full">
+                    <input
+                      class="flex-grow py-2 px-3 leading-tight focus:outline-none focus:ring-0"
+                      id="username"
+                      type="text"
+                      placeholder="Username"
+                    />
+                    <button
+                      type="submit"
+                      class="bg-black text-white text-sm font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--Copyright section-->
+        <div class="primary-bg-color text-white p-6 text-center">
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <span class="md:text-xl">© 2023 Copyright:</span>
+          <a class="font-semibold md:text-xl" href="https://tw-elements.com/"
+            >Gabriel Akoi</a
+          >
+          <hr
+            class="my-6 w-[10%] lg:w-[5%] mx-auto border-gray-200 border-solid border-t-2 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+        </div>
+      </footer>
+    </section>
+  </body>
 </html>
