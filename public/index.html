@@ -185,7 +185,8 @@
       </herosection>
 
       <div
-        class="relative h-[350px] lg:h-[475px] md:h-[390px] overflow-hidden bg-[url('/public/images/image1.jpg')] bg-cover bg-[50%] bg-no-repeat object-cover"
+        class="relative h-[350px] lg:h-[475px] md:h-[390px] overflow-hidden bg-cover bg-[50%] bg-no-repeat object-cover"
+        style="background-image: url('./images/image1.jpg')"
       >
         <div
           class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
@@ -531,28 +532,26 @@
 
       <!-- Footer container -->
       <footer
-        class="bg-zinc-50 text-center text-white lg:text-left mt-20 primary-bg-color"
+        class="text-center text-white lg:text-left mt-20 primary-bg-color border"
       >
-        <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-        <div class="p-10 text-center md:text-left primary-bg-color">
+        <!-- Main container div -->
+        <div class="p-10 md:text-left primary-bg-color">
           <div
-            class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:mx-3 xl:mx-mx-32"
+            class="grid gap-8 items-center md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 lg:mx-24 xl:mx-24"
           >
-            <div class="">
-              <h6
-                class="mb-6 text-2xl flex items-center justify-center font-semibold capitalize md:justify-start"
-              >
+            <!-- Section 1: Portfolio Details -->
+            <div class="md:text-left">
+              <h6 class="text-2xl font-semibold capitalize whitespace-nowrap">
                 Gabriel Akoi Portfolio
               </h6>
               <div>
-                <p class="mb-4">Airfild Monrovia, Liberia</p>
-                <p class="mb-4">phone: <span>+231776875972</span></p>
+                <p class="mb-4">Airfield Monrovia, Liberia</p>
+                <p class="mb-4">Phone: <span>+231776875972</span></p>
                 <p class="mb-4">Email: <span>gabakoi18@gmail.com</span></p>
               </div>
-              <!-- Buttons Section -->
-
+              <!-- Social Media Buttons -->
               <div
-                class="flex justify-center items-center gap-3 lg:justify-start sm:justify-start"
+                class="flex justify-center items-center gap-3 md:justify-start lg:justify-start mt-4"
               >
                 <div
                   class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
@@ -577,36 +576,19 @@
               </div>
             </div>
 
-            <!-- Products section -->
-            <div>
-              <h6
-                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-              >
-                Navigations
-              </h6>
-              <p class="mb-4">
-                <a href="#!" class="text-white">Home</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-white">About Me</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-white">What I do</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-white">My skills</a>
-              </p>
-              <p>
-                <a href="#!" class="text-white">Contacts</a>
-              </p>
+            <!-- Section 2: Navigations -->
+            <div class="text-center md:text-left mt-10 lg:ml-10">
+              <h6 class="font-semibold uppercase">Navigations</h6>
+              <p class="mb-4"><a href="#!" class="text-white">Home</a></p>
+              <p class="mb-4"><a href="#!" class="text-white">About Me</a></p>
+              <p class="mb-4"><a href="#!" class="text-white">What I do</a></p>
+              <p class="mb-4"><a href="#!" class="text-white">My skills</a></p>
+              <p><a href="#!" class="text-white">Contacts</a></p>
             </div>
-            <!-- Useful links section -->
-            <div>
-              <h6
-                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-              >
-                Services
-              </h6>
+
+            <!-- Section 3: Services -->
+            <div class="text-center md:text-left">
+              <h6 class="font-semibold uppercase -mt-12">Services</h6>
               <p class="mb-4">
                 <a href="#!" class="text-white">Web Development</a>
               </p>
@@ -617,29 +599,30 @@
                 <a href="#!" class="text-white">API Development</a>
               </p>
             </div>
-            <!-- Contact section -->
-            <div class="-pl-20">
-              <h6
-                class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
-              >
-                My Newsletter
-              </h6>
-              <p class="text-base sm:text-sm mb-4 text-white lg:text-1xl">
+
+            <!-- Section 4: Newsletter -->
+            <div class="md:text-left">
+              <h6 class="font-semibold uppercase text-white">My Newsletter</h6>
+              <p class="text-sm sm:text-base mb-4 text-white lg:text-base">
                 Subscribe to my newsletter and receive the latest news about our
                 products and services!
               </p>
               <form class="mt-5">
                 <div class="mb-4">
-                  <div class="flex shadow appearance-none w-full">
+                  <div
+                    class="flex flex-col sm:flex-row shadow appearance-none w-full"
+                  >
+                    <!-- Input field for username -->
                     <input
-                      class="flex-grow py-2 px-3 leading-tight focus:outline-none focus:ring-0"
+                      class="flex-grow py-2 px-3 mb-3 sm:mb-0 sm:mr-2 leading-tight focus:outline-none focus:ring-0 rounded-l"
                       id="username"
                       type="text"
                       placeholder="Username"
                     />
+                    <!-- Subscribe button -->
                     <button
                       type="submit"
-                      class="bg-black text-white text-sm font-bold py-2 px-3 rounded-r focus:outline-none focus:shadow-outline"
+                      class="bg-black text-white text-sm font-bold py-2 px-3 rounded sm:rounded-r focus:outline-none focus:shadow-outline"
                     >
                       Subscribe
                     </button>
@@ -649,18 +632,18 @@
             </div>
           </div>
         </div>
-        <!--Copyright section-->
-        <div class="primary-bg-color text-white p-6 text-center">
+        <div>
           <hr
-            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 md:w-[90%]"
           />
-          <span class="md:text-xl">© 2023 Copyright:</span>
-          <a class="font-semibold md:text-xl" href="https://tw-elements.com/"
-            >Gabriel Akoi</a
-          >
-          <hr
-            class="my-6 w-[10%] lg:w-[5%] mx-auto border-gray-200 border-solid border-t-2 sm:mx-auto dark:border-gray-700 lg:my-8"
-          />
+          <div class="md:flex md:justify-center md:items-center mb-4">
+            <span class="md:text-xl -mt-6">© 2023 Copyright:</span>
+            <a
+              class="font-semibold md:text-xl -mt-6"
+              href="https://tw-elements.com/"
+              >Gabriel Akoi</a
+            >
+          </div>
         </div>
       </footer>
     </section>

@@ -226,3 +226,6 @@
 
 
         gabrielakoi.com
+        npm run build
+        public
+
