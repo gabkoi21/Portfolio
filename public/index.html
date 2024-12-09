@@ -13,639 +13,652 @@
     />
   </head>
   <body id="header">
-    <nav class="bg-white sticky lg:sticky top-0 z-50" id="navbar">
-      <div
-        class="max-w-screen-xl flex items-center justify-between lg:mx-auto px-5 py-2 mt-3"
-      >
-        <span class="text-2xl md:text-3xl font-semibold dark:text-white">
-          Gabriel Akoi
-        </span>
+    <div id="container">
+      <nav class="bg-white sticky lg:sticky top-0 z-50" id="navbar">
+        <div
+          class="max-w-screen-xl flex items-center justify-between lg:mx-auto px-5 py-2 mt-3"
+        >
+          <span class="text-2xl md:text-3xl font-semibold dark:text-white">
+            Gabriel Akoi
+          </span>
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:hidden lg:inline-flex space-x-6 font-medium">
-          <li>
-            <a
-              href="#index.html"
-              class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
-              >About Me</a
-            >
-          </li>
-          <li>
-            <a
-              href="#services"
-              class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
-              >What I do</a
-            >
-          </li>
-          <li>
+          <!-- Desktop Menu -->
+          <ul class="hidden md:hidden lg:inline-flex space-x-6 font-medium">
+            <li>
+              <a
+                href="#container"
+                class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
+                >What I do</a
+              >
+            </li>
+            <!-- <li>
             <a
               href="#skills"
               class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
               >My Skills</a
             >
-          </li>
+          </li> -->
 
-          <li>
-            <a
-              href="#contacts"
-              class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
-              >Contacts</a
-            >
-          </li>
-        </ul>
+            <li>
+              <a
+                href="#contacts"
+                class="block py-2 text-black hover:text-blue-600 uppercase text-sm font-bold"
+                >Contacts</a
+              >
+            </li>
+          </ul>
 
-        <!-- Hamburger Button (Mobile/Tablet Only) -->
-        <button
-          id="hamburger-button"
-          type="button"
-          class="inline-flex lg:hidden items-center h-10 text-gray-700"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+          <!-- Hamburger Button (Mobile/Tablet Only) -->
+          <button
+            id="hamburger-button"
+            type="button"
+            class="inline-flex lg:hidden items-center h-10 text-gray-700"
           >
-            <path
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Sliding Navbar (Mobile/Tablet Only) -->
+        <div
+          id="navbar-hamburger"
+          class="fixed bg-white top-0 right-[-100%] h-full w-64 shadow-lg transition-all ease-in-out duration-700 z-50"
+        >
+          <button
+            id="close-button"
+            type="button"
+            class="absolute top-4 right-4 text-gray-500 hover:text-black focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
               stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-      </div>
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
 
-      <!-- Sliding Navbar (Mobile/Tablet Only) -->
-      <div
-        id="navbar-hamburger"
-        class="fixed bg-white top-0 right-[-100%] h-full w-64 shadow-lg transition-all ease-in-out duration-700 z-50"
-      >
-        <button
-          id="close-button"
-          type="button"
-          class="absolute top-4 right-4 text-gray-500 hover:text-black focus:outline-none"
-        >
-          <svg
-            class="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
+          <!-- Mobile/Tablet Menu Items -->
+          <ul
+            class="flex flex-col space-y-4 mt-16 px-6 text-lg"
+            id="navbarHamburger"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <!-- Mobile/Tablet Menu Items -->
-        <ul class="flex flex-col space-y-4 mt-16 px-6 text-lg">
-          <li>
-            <a
-              href="#index.html"
-              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
-              >About Me</a
-            >
-          </li>
-          <li>
-            <a
-              href="#services"
-              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
-              >What I do</a
-            >
-          </li>
-          <li>
-            <a
-              href="#skills"
-              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
-              >My Skills</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contacts"
-              class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
-              >Contacts</a
-            >
-          </li>
-        </ul>
-        <div
-          class="flex justify-center -ml-20 items-center gap-3 lg:justify-start sm:justify-start mt-5 md:ml-5"
-        >
-          <div
-            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
-          >
-            <span class="mdi mdi-facebook md:text-xl"></span>
-          </div>
-          <div
-            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
-          >
-            <span class="mdi mdi-twitter md:text-xl"></span>
-          </div>
-          <div
-            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
-          >
-            <span class="mdi mdi-linkedin md:text-xl"></span>
-          </div>
-          <div
-            class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
-          >
-            <span class="mdi mdi-instagram md:text-xl"></span>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <header>
-      <herosection
-        class="relative flex w-full py-2 shadow-dark-mild dark:bg-body-dark"
-        data-twe-navbar-ref
-      >
-      </herosection>
-
-      <div
-        class="relative h-[350px] lg:h-[475px] md:h-[390px] overflow-hidden bg-cover bg-[50%] bg-no-repeat object-cover"
-        style="background-image: url('./images/image1.jpg')"
-      >
-        <div
-          class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
-        >
-          <div class="flex h-full mt-20">
-            <div class="px-6 text-white md:px-12">
-              <h3 class="text-base sm:text-2xl mt-5 mb-3 capitalize">
-                Hi, I'm Gabriel Akoi
-              </h3>
-              <h2 class="text-2xl sm:text-6xl font-semibold capitalize">
-                I'm Full-stack
-              </h2>
-              <h2 class="text-3xl md:text-6xl font-semibold capitalize">
-                Expert Developer
-              </h2>
-              <button
-                type="button"
-                class="text-white bg-blue-600 rounded-sm primary-gb-black font-medium hover:text-white transition duration-300 text-sm px-5 py-1 me-2 mb-2 flex items-center gap-2 mt-6"
+            <li>
+              <a
+                href="#index.html"
+                class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
+                >Home</a
               >
-                About Me
-                <span class="mdi mdi-arrow-right-thin text-xl"></span>
-              </button>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
+                >What I do</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
+                >My Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacts"
+                class="block py-2 text-black hover:text-blue-500 md:text-xl md:font-bold font-semibold"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <div
+            class="flex justify-center -ml-20 items-center gap-3 lg:justify-start sm:justify-start mt-5 md:ml-5"
+          >
+            <div
+              class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+            >
+              <span class="mdi mdi-facebook md:text-xl"></span>
+            </div>
+            <div
+              class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+            >
+              <span class="mdi mdi-twitter md:text-xl"></span>
+            </div>
+            <div
+              class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+            >
+              <span class="mdi mdi-linkedin md:text-xl"></span>
+            </div>
+            <div
+              class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8 md:w-10 md:h-10"
+            >
+              <span class="mdi mdi-instagram md:text-xl"></span>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </nav>
 
-    <!-- About me  -->
-    <section class="bio-section" id="about">
-      <div
-        class="container mx-auto flex flex-col lg:flex-row items-center gap-5 mt-10 px-4 lg:px-8 mb-8 lg:mt-10"
-      >
-        <!-- Bio Image -->
+      <header>
+        <herosection
+          class="relative flex w-full py-2 shadow-dark-mild dark:bg-body-dark"
+          data-twe-navbar-ref
+        >
+        </herosection>
 
-        <img
-          class="w-full sm:w-1/2 md:w-[80%] lg:w-1/2 h-auto lg:h-1/2 object-cover"
-          src="./images/image2.jpg"
-          alt="Responsive Image"
-        />
-        <!-- Bio Information -->
-        <div class="container mx-auto px-5 mt-1.5 sm:mt-10 lg:px-8">
-          <h3 class="text-2xl sm:text-2xl md:text-3xl lg:mt-16 font-semibold">
-            About Me
-          </h3>
-          <p class="text-gray-700 text-sm sm:text-base items-center mt-3">
-            I am a passionate Full Stack Developer with expertise in building
-            responsive, user-friendly web and mobile applications. I specialize
-            in both front-end and back-end development, creating seamless and
-            efficient solutions to meet user needs. With a strong focus on clean
-            code and innovative designs, I bring ideas to life through
-            technology.
-          </p>
-
-          <p class="text-gray-700 text-base mt-5">
-            My development journey is driven by a commitment to delivering high
-            quality solutions that exceed client expectations. I thrive in
-            collaborative environments, working with teams to design, develop,
-            and deploy scalable applications.
-          </p>
-          <!-- download Cv -->
-
-          <div class="flex flex-row mt-5 gap-4 sm:items-center">
-            <a
-              href="#"
-              download
-              class="bg-blue-500 text-white text-sm sm:text-base font-semibold py-1 px-6 sm:py-2 sm:px-12 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap"
-            >
-              Download CV
-            </a>
-            <a
-              href="#"
-              class="bg-black text-white text-sm sm:text-base font-semibold py-1 px-4 sm:py-2 sm:px-8 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap"
-            >
-              Contact Me
-            </a>
+        <div
+          class="relative h-[350px] lg:h-[475px] md:h-[390px] overflow-hidden bg-cover bg-[50%] bg-no-repeat object-cover"
+          style="background-image: url('./images/image1.jpg')"
+        >
+          <div
+            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"
+          >
+            <div class="flex h-full mt-20">
+              <div class="px-6 text-white md:px-12">
+                <h3 class="text-base sm:text-2xl mt-5 mb-3 capitalize">
+                  Hi, I'm Gabriel Akoi
+                </h3>
+                <h2 class="text-2xl sm:text-6xl font-semibold capitalize">
+                  I'm Full-stack
+                </h2>
+                <h2 class="text-3xl md:text-6xl font-semibold capitalize">
+                  Expert Developer
+                </h2>
+                <button
+                  type="button"
+                  class="text-white bg-blue-600 rounded-sm primary-gb-black font-medium hover:text-white transition duration-300 text-sm px-5 py-1 me-2 mb-2 flex items-center gap-2 mt-6"
+                >
+                  About Me
+                  <span class="mdi mdi-arrow-right-thin text-xl"></span>
+                </button>
+              </div>
+            </div>
           </div>
+        </div>
+      </header>
 
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-xl sm:text-2xl font-semibold mt-5">
-              Training & Certification
+      <!-- About me  -->
+      <section class="bio-section" id="about">
+        <div
+          class="container mx-auto flex flex-col lg:flex-row items-center gap-5 mt-10 px-4 lg:px-8 mb-8 lg:mt-10"
+        >
+          <!-- Bio Image -->
+
+          <img
+            class="w-full sm:w-1/2 md:w-[80%] lg:w-1/2 h-auto lg:h-1/2 object-cover"
+            src="./images/image2.jpg"
+            alt="Responsive Image"
+          />
+          <!-- Bio Information -->
+          <div class="container mx-auto px-5 mt-1.5 sm:mt-10 lg:px-8">
+            <h3 class="text-2xl sm:text-2xl md:text-3xl lg:mt-16 font-semibold">
+              About Me
             </h3>
-
-            <ul class="mt-5 space-y-4 text-gray-700">
-              <li class="flex items-center">
-                <span
-                  class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
-                ></span>
-                Web Design and Development ODC & Orange
-              </li>
-              <li class="flex items-center mt-3">
-                <span
-                  class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
-                ></span>
-                Backend Development - MoMo Open API
-              </li>
-              <li class="flex items-center mt-3">
-                <span
-                  class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
-                ></span>
-                Backend Development - Cs Academy & Orange
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services-section" id="services">
-      <!-- Section Header -->
-      <div class="sm:ml-3 mt-1 lg:mx-12 md:mx-12 xl:px-24 mx-10">
-        <h3
-          class="text-2xl xl:text-xl md:text-2xl lg:text-2xl uppercase text-gray-300 mb-1"
-        >
-          What I do
-        </h3>
-
-        <p
-          class="mt-2 text-lg xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 mb-5"
-        >
-          Create. Innovate. Elevate.
-        </p>
-      </div>
-
-      <!-- Services Grid -->
-      <div
-        class="grid grid-cols-1 md:max-xl:grid-cols-3 xl:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10"
-      >
-        <!-- Card 1 -->
-        <div
-          class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
-        >
-          <div class="sm:p-6 lg:p-4 h-64 border">
-            <div>
-              <span
-                class="mdi mdi-laptop px-3 md:px-2 md:text-1xl sm:text-4xl primary-color"
-              ></span>
-            </div>
-            <h5
-              class="mb-2 text-xl px-3 md:px-2 md:text-base xl:text-xl font-semibold leading-tight mt-5"
-            >
-              Web Development
-            </h5>
-            <p
-              class="mb-4 px-3 text-base xl:text-base md:text-sm md:px-3 text-gray-600 dark:text-gray-300"
-            >
-              I create responsive, modern, and user-friendly websites tailored
-              to your needs, ensuring seamless user experiences.
+            <p class="text-gray-700 text-sm sm:text-base items-center mt-3">
+              I am a passionate Full Stack Developer with expertise in building
+              responsive, user-friendly web and mobile applications. I
+              specialize in both front-end and back-end development, creating
+              seamless and efficient solutions to meet user needs. With a strong
+              focus on clean code and innovative designs, I bring ideas to life
+              through technology.
             </p>
-          </div>
-        </div>
-        <!-- Card 2 Section -->
-        <div
-          class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
-        >
-          <div class="sm:p-6 lg:p-4 h-64 border">
-            <span
-              class="mdi mdi-cellphone px-3 text-3xl md:px-2 md:text-1xl sm:text-4xl primary-color"
-            ></span>
-            <h5
-              class="mb-2 text-text-xl px-3 text-base xl:text-xl md:text-base ml-30 font-semibold leading-tight mt-5 whitespace-nowrap"
-            >
-              Mobile App Development
-            </h5>
 
-            <p
-              class="mb-4 px-3 text-base md:text-sm md:px-3 xl:text-base text-gray-600 dark:text-gray-300"
-            >
-              Build feature-rich and scalable mobile applications for Android
-              and iOS platforms, ensuring optimal performance.
+            <p class="text-gray-700 text-base mt-5">
+              My development journey is driven by a commitment to delivering
+              high quality solutions that exceed client expectations. I thrive
+              in collaborative environments, working with teams to design,
+              develop, and deploy scalable applications.
             </p>
-          </div>
-        </div>
+            <!-- download Cv -->
 
-        <!-- Card 3 -->
-        <div
-          class="block primary-bg-color text-white shadow-md sm:mx-0 pop-up xl:mx-5 xl:h-auto"
-        >
-          <div class="sm:p-6 lg:p-4 h-64 lg:mx:-20 border">
-            <span
-              class="mdi mdi-api px-3 text-3xl sm:text-4xl text-white"
-            ></span>
-            <h5
-              class="mb-2 px-3 text-xl md:text-lg xl:text-xl font-semibold leading-tight mt-5 whitespace-nowrap"
-            >
-              API Development
-            </h5>
-            <p
-              class="mb-4 text-white p-1 xl:text-base md:text-sm md:px-3 px-2 text-base"
-            >
-              Building robust and scalable APIs that enable seamless
-              communication between applications.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Form Section -->
-      <section class="md:px-2 bg-white">
-        <div
-          class="flex flex-col md:flex lg:flex-row xl:flex-row py-5 lg:mx-10 gap-10 px-10 md:mx-20 bg-white shadow mt-10"
-        >
-          <!-- Contact Form Section -->
-          <div class="form-div">
-            <h2
-              class="text-base md:text-2xl font-bold xl:ml-20 mb-4 text-gray-700 uppercase whitespace-nowrap"
-            >
-              Contact Form
-            </h2>
-            <form class="w-full xl:mx-20">
-              <div class="flex flex-wrap -mx-3 mb-1">
-                <div class="w-full md:w-1/2 px-3 mb:2 md:mb-0">
-                  <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    for="grid-first-name"
-                  >
-                  </label>
-                  <input
-                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
-                    id="grid-first-name"
-                    type="text"
-                    placeholder="Name"
-                  />
-                </div>
-
-                <div class="w-full md:w-1/2 lg:w-[50%] px-3">
-                  <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    for="grid-last-name"
-                  >
-                  </label>
-                  <input
-                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
-                    type="email"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-
-              <div class="flex flex-wrap -mx-3 mb-1">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    for="grid-password"
-                  >
-                  </label>
-                  <input
-                    class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
-                    id="grid-password"
-                    type="text"
-                    placeholder="Subject"
-                  />
-                </div>
-              </div>
-
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                  <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    for="subject"
-                  >
-                  </label>
-                  <textarea
-                    class="appearance-none w-full text-sm text-gray-700 py-2 xl:py-10 md:py-10 px-4 md:mb-3 leading-tight focus:outline-none focus:ring-0"
-                    id="subject"
-                    name="subject"
-                    rows="4"
-                    placeholder="Your Message..."
-                  ></textarea>
-                  <button
-                    type="button"
-                    class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-sm w-full sm:w-auto"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <!-- Contact Address Section -->
-          <div class="w-full md:w-full xl:w-[60%] -mt-10 lg:mt-1 xl:ml-20">
-            <!-- Heading outside the border -->
-            <h2
-              class="text-base md:text-2xl font-bold mb-4 uppercase text-gray-700 whitespace-nowrap"
-            >
-              Contact Address
-            </h2>
-
-            <div class="Contact-div border p-6 xl:p-10 mt-6">
-              <div class="flex mb-4 gap-5 items-center">
-                <!-- <span class="mdi mdi-map-marker text-xl"></span> -->
-                <div
-                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
-                >
-                  <span class="mdi mdi-map-marker text-white text-xl"></span>
-                </div>
-                <p class="capitalize text-base lg:text-1xl">
-                  Airfild Sinkor Monrovia
-                </p>
-              </div>
-
-              <div class="flex mb-4 gap-5 items-center">
-                <!-- <span class="mdi mdi-email-outline text-xl"></span> -->
-                <div
-                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
-                >
-                  <span class="mdi mdi-email-outline text-white text-xl"></span>
-                </div>
-
-                <p class="text-base lg:text-1xl">gabakoi18@gmail.com</p>
-              </div>
-
-              <div class="flex mb-4 gap-5">
-                <!-- <span class="mdi mdi-phone mt-2 text-xl"></span> -->
-                <div
-                  class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
-                >
-                  <span class="mdi mdi-phone text-white text-xl"></span>
-                </div>
-
-                <div>
-                  <p class="text-base lg:text-1xl">07777878972</p>
-                  <p class="text-base lg:text-1xl">07777878972</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- This section for flooting button  -->
-      <section>
-        <!-- <button -->
-        <button
-          type="button"
-          id="back-to-top"
-          class="fixed bottom-5 right-5 text-white bg-blue-600 px-2 py-1"
-        >
-          <span class="mdi mdi-chevron-up text-3xl"></span>
-        </button>
-      </section>
-
-      <!-- Footer container -->
-      <footer
-        class="text-center text-white lg:text-left mt-20 primary-bg-color border"
-      >
-        <!-- Main container div -->
-        <div class="p-10 md:text-left primary-bg-color">
-          <div
-            class="grid gap-8 items-center md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 lg:mx-24 xl:mx-24"
-          >
-            <!-- Section 1: Portfolio Details -->
-            <div class="md:text-left">
-              <h6 class="text-2xl font-semibold capitalize whitespace-nowrap">
-                Gabriel Akoi Portfolio
-              </h6>
-              <div>
-                <p class="mb-4">Airfield Monrovia, Liberia</p>
-                <p class="mb-4">Phone: <span>+231776875972</span></p>
-                <p class="mb-4">Email: <span>gabakoi18@gmail.com</span></p>
-              </div>
-              <!-- Social Media Buttons -->
-              <div
-                class="flex justify-center items-center gap-3 md:justify-start lg:justify-start mt-4"
+            <div class="flex flex-row mt-5 gap-4 sm:items-center">
+              <a
+                href="#"
+                download
+                class="bg-blue-500 text-white text-sm sm:text-base font-semibold py-1 px-6 sm:py-2 sm:px-12 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap"
               >
-                <div
-                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
-                >
-                  <span class="mdi mdi-facebook"></span>
-                </div>
-                <div
-                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
-                >
-                  <span class="mdi mdi-twitter"></span>
-                </div>
-                <div
-                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
-                >
-                  <span class="mdi mdi-linkedin"></span>
-                </div>
-                <div
-                  class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
-                >
-                  <span class="mdi mdi-instagram"></span>
-                </div>
+                Download CV
+              </a>
+              <a
+                href="#"
+                class="bg-black text-white text-sm sm:text-base font-semibold py-1 px-4 sm:py-2 sm:px-8 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap"
+              >
+                Contact Me
+              </a>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <h3 class="text-xl sm:text-2xl font-semibold mt-5">
+                Training & Certification
+              </h3>
+
+              <ul class="mt-5 space-y-4 text-gray-700">
+                <li class="flex items-center">
+                  <span
+                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                  ></span>
+                  Web Design and Development ODC & Orange
+                </li>
+                <li class="flex items-center mt-3">
+                  <span
+                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                  ></span>
+                  Backend Development - MoMo Open API
+                </li>
+                <li class="flex items-center mt-3">
+                  <span
+                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                  ></span>
+                  Backend Development - Cs Academy & Orange
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <!-- Section Header -->
+        <div class="sm:ml-3 mt-1 lg:mx-12 md:mx-12 xl:px-24 mx-10">
+          <h3
+            class="text-2xl xl:text-xl md:text-2xl lg:text-2xl uppercase text-gray-300 mb-1"
+          >
+            What I do
+          </h3>
+
+          <p
+            class="mt-2 text-lg xl:text-2xl font-semibold primary-color mb-2x xl:mb-10 mb-5"
+          >
+            Create. Innovate. Elevate.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div
+          class="grid grid-cols-1 md:max-xl:grid-cols-3 xl:grid-cols-3 gap-4 lg:px-8 lg:max:mx-12 lg:mx-12 xl:mx-24 xl:items-center mx-10"
+        >
+          <!-- Card 1 -->
+          <div
+            class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+          >
+            <div class="sm:p-6 lg:p-4 h-64 border">
+              <div>
+                <span
+                  class="mdi mdi-laptop px-3 md:px-2 md:text-1xl sm:text-4xl primary-color"
+                ></span>
               </div>
-            </div>
-
-            <!-- Section 2: Navigations -->
-            <div class="text-center md:text-left mt-10 lg:ml-10">
-              <h6 class="font-semibold uppercase">Navigations</h6>
-              <p class="mb-4"><a href="#!" class="text-white">Home</a></p>
-              <p class="mb-4"><a href="#!" class="text-white">About Me</a></p>
-              <p class="mb-4"><a href="#!" class="text-white">What I do</a></p>
-              <p class="mb-4"><a href="#!" class="text-white">My skills</a></p>
-              <p><a href="#!" class="text-white">Contacts</a></p>
-            </div>
-
-            <!-- Section 3: Services -->
-            <div class="text-center md:text-left">
-              <h6 class="font-semibold uppercase -mt-12">Services</h6>
-              <p class="mb-4">
-                <a href="#!" class="text-white">Web Development</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-white">Mobile App Development</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-white">API Development</a>
+              <h5
+                class="mb-2 text-xl px-3 md:px-2 md:text-base xl:text-xl font-semibold leading-tight mt-5"
+              >
+                Web Development
+              </h5>
+              <p
+                class="mb-4 px-3 text-base xl:text-base md:text-sm md:px-3 text-gray-600 dark:text-gray-300"
+              >
+                I create responsive, modern, and user-friendly websites tailored
+                to your needs, ensuring seamless user experiences.
               </p>
             </div>
+          </div>
+          <!-- Card 2 Section -->
+          <div
+            class="block bg-white shadow-md dark:bg-gray-800 dark:text-white sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+          >
+            <div class="sm:p-6 lg:p-4 h-64 border">
+              <span
+                class="mdi mdi-cellphone px-3 text-3xl md:px-2 md:text-1xl sm:text-4xl primary-color"
+              ></span>
+              <h5
+                class="mb-2 text-text-xl px-3 text-base xl:text-xl md:text-base ml-30 font-semibold leading-tight mt-5 whitespace-nowrap"
+              >
+                Mobile App Development
+              </h5>
 
-            <!-- Section 4: Newsletter -->
-            <div class="md:text-left">
-              <h6 class="font-semibold uppercase text-white">My Newsletter</h6>
-              <p class="text-sm sm:text-base mb-4 text-white lg:text-base">
-                Subscribe to my newsletter and receive the latest news about our
-                products and services!
+              <p
+                class="mb-4 px-3 text-base md:text-sm md:px-3 xl:text-base text-gray-600 dark:text-gray-300"
+              >
+                Build feature-rich and scalable mobile applications for Android
+                and iOS platforms, ensuring optimal performance.
               </p>
-              <form class="mt-5">
-                <div class="mb-4">
-                  <div
-                    class="flex flex-col sm:flex-row shadow appearance-none w-full"
-                  >
-                    <!-- Input field for username -->
-                    <input
-                      class="flex-grow py-2 px-3 mb-3 sm:mb-0 sm:mr-2 leading-tight focus:outline-none focus:ring-0 rounded-l"
-                      id="username"
-                      type="text"
-                      placeholder="Username"
-                    />
-                    <!-- Subscribe button -->
-                    <button
-                      type="submit"
-                      class="bg-black text-white text-sm font-bold py-2 px-3 rounded sm:rounded-r focus:outline-none focus:shadow-outline"
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="block primary-bg-color text-white shadow-md sm:mx-0 pop-up xl:mx-5 xl:h-auto"
+          >
+            <div class="sm:p-6 lg:p-4 h-64 lg:mx:-20 border">
+              <span
+                class="mdi mdi-api px-3 text-3xl sm:text-4xl text-white"
+              ></span>
+              <h5
+                class="mb-2 px-3 text-xl md:text-lg xl:text-xl font-semibold leading-tight mt-5 whitespace-nowrap"
+              >
+                API Development
+              </h5>
+              <p
+                class="mb-4 text-white p-1 xl:text-base md:text-sm md:px-3 px-2 text-base"
+              >
+                Building robust and scalable APIs that enable seamless
+                communication between applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <section class="md:px-2 bg-white" id="contacts">
+          <div
+            class="flex flex-col md:flex lg:flex-row xl:flex-row py-5 lg:mx-10 gap-10 px-10 md:mx-20 bg-white shadow mt-10"
+          >
+            <!-- Contact Form Section -->
+            <div class="form-div">
+              <h2
+                class="text-base md:text-2xl font-bold xl:ml-20 mb-4 text-gray-700 uppercase whitespace-nowrap"
+              >
+                Contact Form
+              </h2>
+              <form class="w-full xl:mx-20">
+                <div class="flex flex-wrap -mx-3 mb-1">
+                  <div class="w-full md:w-1/2 px-3 mb:2 md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                      for="grid-first-name"
                     >
-                      Subscribe
+                    </label>
+                    <input
+                      class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                      id="grid-first-name"
+                      type="text"
+                      placeholder="Name"
+                    />
+                  </div>
+
+                  <div class="w-full md:w-1/2 lg:w-[50%] px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                      for="grid-last-name"
+                    >
+                    </label>
+                    <input
+                      class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                      type="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-1">
+                  <div class="w-full px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                      for="grid-password"
+                    >
+                    </label>
+                    <input
+                      class="appearance-none w-full text-sm text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-0"
+                      id="grid-password"
+                      type="text"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                      for="subject"
+                    >
+                    </label>
+                    <textarea
+                      class="appearance-none w-full text-sm text-gray-700 py-2 xl:py-10 md:py-10 px-4 md:mb-3 leading-tight focus:outline-none focus:ring-0"
+                      id="subject"
+                      name="subject"
+                      rows="4"
+                      placeholder="Your Message..."
+                    ></textarea>
+                    <button
+                      type="button"
+                      class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-sm w-full sm:w-auto"
+                    >
+                      Send Message
                     </button>
                   </div>
                 </div>
               </form>
             </div>
+
+            <!-- Contact Address Section -->
+            <div class="w-full md:w-full xl:w-[60%] -mt-10 lg:mt-1 xl:ml-20">
+              <!-- Heading outside the border -->
+              <h2
+                class="text-base md:text-2xl font-bold mb-4 uppercase text-gray-700 whitespace-nowrap"
+              >
+                Contact Address
+              </h2>
+
+              <div class="Contact-div border p-6 xl:p-10 mt-6">
+                <div class="flex mb-4 gap-5 items-center">
+                  <!-- <span class="mdi mdi-map-marker text-xl"></span> -->
+                  <div
+                    class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                  >
+                    <span class="mdi mdi-map-marker text-white text-xl"></span>
+                  </div>
+                  <p class="capitalize text-base lg:text-1xl">
+                    Airfild Sinkor Monrovia
+                  </p>
+                </div>
+
+                <div class="flex mb-4 gap-5 items-center">
+                  <!-- <span class="mdi mdi-email-outline text-xl"></span> -->
+                  <div
+                    class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                  >
+                    <span
+                      class="mdi mdi-email-outline text-white text-xl"
+                    ></span>
+                  </div>
+
+                  <p class="text-base lg:text-1xl">gabakoi18@gmail.com</p>
+                </div>
+
+                <div class="flex mb-4 gap-5">
+                  <!-- <span class="mdi mdi-phone mt-2 text-xl"></span> -->
+                  <div
+                    class="flex items-center justify-center bg-blue-500 rounded-full w-8 h-8 lg:w-10 lg:h-10"
+                  >
+                    <span class="mdi mdi-phone text-white text-xl"></span>
+                  </div>
+
+                  <div>
+                    <p class="text-base lg:text-1xl">07777878972</p>
+                    <p class="text-base lg:text-1xl">07777878972</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <hr
-            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 md:w-[90%]"
-          />
-          <div class="md:flex md:justify-center md:items-center mb-4">
-            <span class="md:text-xl -mt-6">© 2023 Copyright:</span>
-            <a
-              class="font-semibold md:text-xl -mt-6"
-              href="https://tw-elements.com/"
-              >Gabriel Akoi</a
+        </section>
+
+        <!-- This section for flooting button  -->
+        <section>
+          <!-- <button -->
+          <button
+            type="button"
+            id="back-to-top"
+            class="fixed bottom-5 right-5 text-white bg-blue-600 px-2 py-1"
+          >
+            <span class="mdi mdi-chevron-up text-3xl"></span>
+          </button>
+        </section>
+
+        <!-- Footer container -->
+        <footer
+          class="text-center text-white lg:text-left mt-20 primary-bg-color border"
+        >
+          <!-- Main container div -->
+          <div class="p-10 md:text-left primary-bg-color">
+            <div
+              class="grid gap-8 items-center md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 lg:mx-24 xl:mx-24"
             >
+              <!-- Section 1: Portfolio Details -->
+              <div class="md:text-left">
+                <h6 class="text-2xl font-semibold capitalize whitespace-nowrap">
+                  Gabriel Akoi Portfolio
+                </h6>
+                <div>
+                  <p class="mb-4">Airfield Monrovia, Liberia</p>
+                  <p class="mb-4">Phone: <span>+231776875972</span></p>
+                  <p class="mb-4">Email: <span>gabakoi18@gmail.com</span></p>
+                </div>
+                <!-- Social Media Buttons -->
+                <div
+                  class="flex justify-center items-center gap-3 md:justify-start lg:justify-start mt-4"
+                >
+                  <div
+                    class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                  >
+                    <span class="mdi mdi-facebook"></span>
+                  </div>
+                  <div
+                    class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                  >
+                    <span class="mdi mdi-twitter"></span>
+                  </div>
+                  <div
+                    class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                  >
+                    <span class="mdi mdi-linkedin"></span>
+                  </div>
+                  <div
+                    class="flex items-center justify-center border border-blue-500 rounded-full w-8 h-8"
+                  >
+                    <span class="mdi mdi-instagram"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 2: Navigations -->
+              <div class="text-center md:text-left mt-10 lg:ml-10">
+                <h6 class="font-semibold uppercase">Navigations</h6>
+                <p class="mb-4"><a href="#!" class="text-white">Home</a></p>
+                <p class="mb-4"><a href="#!" class="text-white">About Me</a></p>
+                <p class="mb-4">
+                  <a href="#!" class="text-white">What I do</a>
+                </p>
+                <p class="mb-4">
+                  <a href="#!" class="text-white">My skills</a>
+                </p>
+                <p><a href="#!" class="text-white">Contacts</a></p>
+              </div>
+
+              <!-- Section 3: Services -->
+              <div class="text-center md:text-left">
+                <h6 class="font-semibold uppercase lg:-mt-12">Services</h6>
+                <p class="mb-4">
+                  <a href="#!" class="text-white">Web Development</a>
+                </p>
+                <p class="mb-4">
+                  <a href="#!" class="text-white">Mobile App Development</a>
+                </p>
+                <p class="mb-4">
+                  <a href="#!" class="text-white">API Development</a>
+                </p>
+              </div>
+
+              <!-- Section 4: Newsletter -->
+              <div class="md:text-left">
+                <h6 class="font-semibold uppercase text-white">
+                  My Newsletter
+                </h6>
+                <p class="text-sm sm:text-base mb-4 text-white lg:text-base">
+                  Subscribe to my newsletter and receive the latest news about
+                  our products and services!
+                </p>
+                <form class="mt-5">
+                  <div class="mb-4">
+                    <div
+                      class="flex flex-col sm:flex-row shadow appearance-none w-full"
+                    >
+                      <!-- Input field for username -->
+                      <input
+                        class="flex-grow py-2 px-3 mb-3 sm:mb-0 sm:mr-2 leading-tight focus:outline-none focus:ring-0 rounded-l"
+                        id="username"
+                        type="text"
+                        placeholder="Username"
+                      />
+                      <!-- Subscribe button -->
+                      <button
+                        type="submit"
+                        class="bg-black text-white text-sm font-bold py-2 px-3 rounded sm:rounded-r focus:outline-none focus:shadow-outline"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
-      </footer>
-    </section>
+          <div>
+            <hr
+              class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 md:w-[90%]"
+            />
+            <div class="md:flex md:justify-center md:items-center mb-4">
+              <span class="md:text-xl -mt-6">© 2023 Copyright:</span>
+              <a
+                class="font-semibold md:text-xl -mt-6"
+                href="https://tw-elements.com/"
+                >Gabriel Akoi</a
+              >
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>

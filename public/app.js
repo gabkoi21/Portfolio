@@ -1,6 +1,7 @@
 const hamburgerButton = document.getElementById("hamburger-button");
 const closeButton = document.getElementById("close-button");
 const navbarHamburger = document.getElementById("navbar-hamburger");
+const navLinks = document.querySelectorAll(".flex a");
 
 // Toggle navbar on hamburger button click
 hamburgerButton.addEventListener("click", (event) => {
@@ -9,13 +10,14 @@ hamburgerButton.addEventListener("click", (event) => {
   navbarHamburger.slider.classList.add("slide");
 });
 
-// Close navbar on close button click
-closeButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  navbarHamburger.classList.remove("active");
+// / Close navbar when clicking on a link
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarHamburger.classList.remove("active");
+  });
 });
 
-// Close navbar when clicking anywhere outside
+// Close navbar when clicking outside
 document.addEventListener("click", (event) => {
   if (
     !navbarHamburger.contains(event.target) &&
@@ -24,6 +26,14 @@ document.addEventListener("click", (event) => {
     navbarHamburger.classList.remove("active");
   }
 });
+
+// Stop propagation for close button
+if (closeButton) {
+  closeButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    navbarHamburger.classList.remove("active");
+  });
+}
 
 // Show button when scrolled down
 const backToTopButton = document.getElementById("back-to-top");
@@ -35,22 +45,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Scroll to top on click
+// This is responsible to disaply the back to top blue button
 backToTopButton.addEventListener("click", () => {
   document.getElementById("header").scrollIntoView({ behavior: "smooth" });
 });
 
 window.onscroll = function () {
   changeNavbarColor();
-};
-
-// this is for the blsck bg
-// JavaScript to detect scroll and add/remove shadow
-window.onscroll = function () {
-  var navbar = document.getElementById("navbar");
-  if (window.pageYOffset > 0) {
-    navbar.classList.add("navbar-scrolled");
-  } else {
-    navbar.classList.remove("navbar-scrolled");
-  }
 };
