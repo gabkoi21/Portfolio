@@ -1,4 +1,3 @@
-
 // };
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,4 +10,5 @@ module.exports = {
     extend: {},
   },
   plugins: [require("flowbite/plugin")],
+  darkMode: "class",
 };

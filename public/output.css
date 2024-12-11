@@ -1191,9 +1191,19 @@ input:checked + .toggle-bg {
   margin-right: 2.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .my-6 {
@@ -1201,16 +1211,8 @@ input:checked + .toggle-bg {
   margin-bottom: 1.5rem;
 }
 
-.-ml-20 {
-  margin-left: -5rem;
-}
-
 .-mt-10 {
   margin-top: -2.5rem;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
 }
 
 .-mt-6 {
@@ -1620,6 +1622,11 @@ input:checked + .toggle-bg {
   border-width: 0px;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(63 131 248 / var(--tw-border-opacity, 1));
@@ -1648,6 +1655,11 @@ input:checked + .toggle-bg {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+
+.border-red-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(200 30 30 / var(--tw-border-opacity, 1));
 }
 
 .\!bg-gray-50 {
@@ -1781,6 +1793,11 @@ input:checked + .toggle-bg {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -2015,6 +2032,58 @@ input:checked + .toggle-bg {
 
 /* Initial hidden state for the navbar */
 
+:root {
+  scroll-behavior: smooth;
+}
+
+/* Default Light Mode */
+
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.bg-white.dark-mode {
+  background-color: #1f1f1f;
+}
+
+.text-black.dark-mode {
+  color: white;
+}
+
+.text-white.dark-mode {
+  color: black;
+}
+
+.text-gray-600.dark-mode {
+  color: #a0a0a0;
+}
+
+.text-gray-900.dark-mode {
+  color: #f0f0f0;
+}
+
+.bg-gray-800.dark-mode {
+  background-color: #333;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -2243,6 +2312,11 @@ body {
     margin-right: 0px;
   }
 
+  .sm\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2282,10 +2356,6 @@ body {
 
   .sm\:items-center {
     align-items: center;
-  }
-
-  .sm\:justify-start {
-    justify-content: flex-start;
   }
 
   .sm\:rounded-r {
@@ -2353,12 +2423,12 @@ body {
     margin-bottom: 0px;
   }
 
-  .md\:mb-3 {
-    margin-bottom: 0.75rem;
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
-  .md\:ml-5 {
-    margin-left: 1.25rem;
+  .md\:mb-3 {
+    margin-bottom: 0.75rem;
   }
 
   .md\:flex {
@@ -2369,20 +2439,12 @@ body {
     display: none;
   }
 
-  .md\:h-10 {
-    height: 2.5rem;
-  }
-
   .md\:h-\[390px\] {
     height: 390px;
   }
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
   }
 
   .md\:w-\[80\%\] {
@@ -2411,6 +2473,11 @@ body {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:px-12 {
@@ -2511,6 +2578,10 @@ body {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:-mt-12 {
+    margin-top: -3rem;
   }
 
   .lg\:ml-10 {

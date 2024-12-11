@@ -6,6 +6,41 @@
 :root {
   scroll-behavior: smooth;
 }
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.bg-white.dark-mode {
+  background-color: #1f1f1f;
+}
+
+.text-black.dark-mode {
+  color: white;
+}
+
+.text-white.dark-mode {
+  color: black;
+}
+
+.text-gray-600.dark-mode {
+  color: #a0a0a0;
+}
+
+.text-gray-900.dark-mode {
+  color: #f0f0f0;
+}
+
+.bg-gray-800.dark-mode {
+  background-color: #333;
+}
 
 body {
   background-color: var(--main-bg-color);
@@ -53,6 +88,16 @@ body {
   .primary-bg-color {
     /* color: #020617; */
     background: #020617;
+  }
+
+  .examplesMe {
+    margin: auto !important;
+    /* padding: 20px  ; */
+    /* background: #020617 !important; */
+  }
+
+  .card-heading {
+    padding-left: 305px !important ;
   }
 
   .primary-color {
