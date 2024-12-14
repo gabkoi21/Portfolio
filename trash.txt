@@ -256,3 +256,12 @@
 <div
             class="block bg-white shadow-md dark:bg-gray-800 dark:text-white w-full sm:mx-0 pop-up xl:mx-5 xl:h-auto"
           >
+
+// max-w-screen-xl
+
+<div class="max-w-screen-xl mx-auto px-4">
+  <!-- Your content here -->
+</div>
+
+//Thus is footer styles 
+  class="text-center text-white lg:text-left mt-20 primary-bg-color border border-red-700"

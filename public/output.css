@@ -1632,11 +1632,6 @@ input:checked + .toggle-bg {
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
-}
-
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
@@ -2059,13 +2054,6 @@ button {
   color: white;
 }
 
-body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #ffff;
-}
-
 #navbar-hamburger {
   position: fixed;
   top: 0;
@@ -2089,6 +2077,38 @@ body {
 .navbar-scrolled {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+}
+
+#subject::-moz-placeholder {
+  color: #9ca3af;
+  /* Example color */
+  font-style: italic;
+  /* Example styling */
+  font-size: 14px;
+  /* Adjust font size if needed */
+}
+
+#subject::placeholder {
+  color: #9ca3af;
+  /* Example color */
+  font-style: italic;
+  /* Example styling */
+  font-size: 14px;
+  /* Adjust font size if needed */
+}
+
+/* Optional: Add a custom class for placeholder styling */
+
+.placeholder-custom::-moz-placeholder {
+  color: #6b7280;
+  /* Another example color */
+  font-weight: bold;
+}
+
+.placeholder-custom::placeholder {
+  color: #6b7280;
+  /* Another example color */
+  font-weight: bold;
 }
 
 .hover\:border-gray-300:hover {
@@ -2336,6 +2356,10 @@ body {
   .sm\:rounded-r {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
+  }
+
+  .sm\:p-20 {
+    padding: 5rem;
   }
 
   .sm\:p-6 {

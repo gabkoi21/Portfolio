@@ -52,13 +52,6 @@ button {
   color: white;
 }
 
-body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #ffff;
-}
-
 #navbar-hamburger {
   position: fixed;
   top: 0;
@@ -109,4 +102,16 @@ body {
 .navbar-scrolled {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+}
+
+#subject::placeholder {
+  color: #9ca3af; /* Example color */
+  font-style: italic; /* Example styling */
+  font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Optional: Add a custom class for placeholder styling */
+.placeholder-custom::placeholder {
+  color: #6b7280; /* Another example color */
+  font-weight: bold;
 }
