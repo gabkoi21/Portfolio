@@ -2731,9 +2731,9 @@ button {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mx-28 {
-    margin-left: 7rem;
-    margin-right: 7rem;
+  .\32xl\:mx-48 {
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
 }
 

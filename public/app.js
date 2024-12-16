@@ -54,53 +54,6 @@ window.onscroll = function () {
   changeNavbarColor();
 };
 
-// document.getElementById("send-button").addEventListener("click", function () {
-//   const name = document.getElementById("name").value;
-//   const email = document.getElementById("email").value;
-//   const subject = document.getElementById("subject").value;
-//   const message = document.getElementById("message").value;
-
-//   // Prepare the template parameters
-//   const templateParams = {
-//     name: name,
-//     email: email,
-//     subject: subject,
-//     message: message,
-//   };
-
-//   // Send the email using EmailJS
-//   emailjs.send("service_skpa4zk", "template_zvtymtm", templateParams).then(
-//     function (response) {
-//       console.log("SUCCESS!", response);
-//     },
-//     function (error) {
-//       console.log("FAILED...", error);
-//     }
-//   );
-// });
-
-// const sendMail = () => {
-//   let params = {
-//     name: document.getElementById("name").value,
-//     email: document.getElementById("email").value,
-//     subject: document.getElementById("subject").value,
-//     message: document.getElementById("message").value,
-//   };
-
-//   const SERVICEID = "service_skpa4zk";
-//   const TEMPLATEID = "template_zvtymtm";
-
-//   emailjs.send(SERVICEID, TEMPLATEID, templateParams).then((res) => {
-//     (document.getElementById("name").value = ""),
-//       (document.getElementById("email").value = ""),
-//       (document.getElementById("subject").value = ""),
-//       (document.getElementById("message").value = ""),
-//       console.log(res);
-//     alert("your Message have been send successfully");
-//   });
-//   .catch((err) => console.log(err))
-// };
-
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
@@ -111,6 +64,7 @@ document
       email: document.getElementById("email").value,
       subject: document.getElementById("subject").value,
       message: document.getElementById("message").value,
+      reply_to: document.getElementById("email").value,
     };
 
     const SERVICEID = "service_skpa4zk";
@@ -125,9 +79,11 @@ document
         document.getElementById("email").value = "";
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
-
-        console.log(res);
+        document.getElementById("email").value, console.log(res);
         // alert("Your message has been sent successfully!");
+
+        // Clear the form fields
+        document.getElementById("contact-form").reset();
       })
       .catch((err) => {
         console.log(err);
