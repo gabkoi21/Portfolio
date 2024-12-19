@@ -223,23 +223,25 @@
       </header>
 
       <!-- About me  -->
-      <section class="bio-section" id="about">
+      <section class="container mx-auto bio-section mt-3" id="about">
         <div
-          class="container mx-auto flex flex-col lg:flex-row items-center gap-5 mt-10 px-4 lg:px-8 mb-8 lg:mt-10"
+          class="flex flex-col lg:flex-row items-center gap-5 mt-10 px-4 lg:px-8 mb-8"
         >
           <!-- Bio Image -->
-
           <img
-            class="w-full sm:w-1/2 md:w-[80%] lg:w-1/2 h-auto lg:h-1/2 object-cover"
+            class="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-lg"
             src="./images/image2.jpg"
             alt="Responsive Image"
           />
+
           <!-- Bio Information -->
-          <div class="container mx-auto px-5 mt-1.5 sm:mt-10 lg:px-8">
+          <div
+            class="flex flex-col justify-center lg:w-1/2 px-5 mt-2 sm:mt-10 lg:px-8"
+          >
             <h3 class="text-2xl sm:text-2xl md:text-3xl lg:mt-16 font-semibold">
               About Me
             </h3>
-            <p class="text-gray-700 text-sm sm:text-base items-center mt-3">
+            <p class="text-gray-700 text-sm sm:text-base mt-3">
               I am a passionate Full Stack Developer with expertise in building
               responsive, user-friendly web and mobile applications. I
               specialize in both front-end and back-end development, creating
@@ -254,46 +256,46 @@
               in collaborative environments, working with teams to design,
               develop, and deploy scalable applications.
             </p>
-            <!-- download Cv -->
 
-            <div class="flex flex-row mt-5 gap-4 sm:items-center">
+            <!-- Download CV -->
+            <div class="flex mt-5 gap-4">
               <a
                 href="https://www.dropbox.com/scl/fi/kvv99enkh8n1e1uacev17/GabrielAkoiCV.pdf?rlkey=7jvnjomqc4cqzafg94uqrsl8w&raw=1"
                 target="_blank"
-                class="bg-blue-500 text-white text-sm sm:text-base font-semibold py-1 px-6 sm:py-2 sm:px-12 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap capitalize"
+                class="bg-blue-500 text-white text-sm sm:text-base font-semibold py-2 px-6 sm:px-12 transition duration-300 ease-in-out rounded-sm capitalize"
               >
-                download cV
+                download CV
               </a>
 
               <a
                 href="#contacts"
-                class="bg-black text-white text-sm sm:text-base font-semibold py-1 px-4 sm:py-2 sm:px-8 transition duration-300 ease-in-out text-center rounded-sm whitespace-nowrap"
+                class="bg-black text-white text-sm sm:text-base font-semibold py-2 px-6 sm:px-8 transition duration-300 ease-in-out rounded-sm"
               >
                 Contact Me
               </a>
             </div>
 
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 class="text-xl sm:text-2xl font-semibold mt-5">
+            <!-- Training & Certification -->
+            <div class="mt-8">
+              <h3 class="text-xl sm:text-2xl font-semibold">
                 Training & Certification
               </h3>
-
               <ul class="mt-5 space-y-4 text-gray-700">
                 <li class="flex items-center">
                   <span
-                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                    class="mdi mdi-check text-blue-600 text-2xl mr-2"
                   ></span>
                   Web Design and Development ODC & Orange
                 </li>
-                <li class="flex items-center mt-3">
+                <li class="flex items-center">
                   <span
-                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                    class="mdi mdi-check text-blue-600 text-2xl mr-2"
                   ></span>
                   Backend Development - MoMo Open API
                 </li>
-                <li class="flex items-center mt-3">
+                <li class="flex items-center">
                   <span
-                    class="mdi mdi-check text-blue-600 text-xl sm:text-2xl ml-1 sm:ml-2"
+                    class="mdi mdi-check text-blue-600 text-2xl mr-2"
                   ></span>
                   Backend Development - Cs Academy & Orange
                 </li>
@@ -302,6 +304,7 @@
           </div>
         </div>
       </section>
+
       <!-- This is the card section  -->
       <section class="container mx-auto services-section" id="services">
         <!-- Section Header -->
@@ -409,7 +412,7 @@
             <!-- form for  sending email -->
             <form class="w-full xl:mx-20" id="contact-form">
               <div class="flex flex-wrap -mx-3 mb-1">
-                <div class="w-full md:w-1/2 px-3 mb:2 md:mb-0">
+                <div class="w-full md:w-1/2 px-4 mb:2 md:mb-0">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     for="grid-first-name"
@@ -424,7 +427,7 @@
                   />
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-[50%] px-3">
+                <div class="w-full md:w-1/ px-4 lg:w-[50%]">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     for="grid-last-name"
@@ -441,7 +444,7 @@
               </div>
 
               <div class="flex flex-wrap -mx-3 mb-1">
-                <div class="w-full px-3">
+                <div class="w-full px-4">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     for="grid-password"
@@ -459,7 +462,7 @@
 
               <!-- Textarea -->
               <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
+                <div class="w-full px-4">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     for="message"
@@ -514,7 +517,7 @@
                   <span class="mdi mdi-email-outline text-white text-xl"></span>
                 </div>
 
-                <p class="text-base lg:text-1xl">gabakoi18@gmail.com</p>
+                <p class="text-base lg:text-1xl">gabakoi21@gmail.com</p>
               </div>
 
               <div class="flex mb-4 gap-5">
@@ -576,7 +579,7 @@
               <div>
                 <p class="mb-4">Airfield Monrovia, Liberia</p>
                 <p class="mb-4">Phone: <span>+231776875972</span></p>
-                <p class="mb-4">Email:<span>gabakoi18@gmail.com</span></p>
+                <p class="mb-4">Email:<span>gabakoi21@gmail.com</span></p>
               </div>
               <!-- Social Media Buttons -->
               <div

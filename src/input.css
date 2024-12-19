@@ -1,3 +1,4 @@
+@import "normalize.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,16 +7,18 @@
 :root {
   scroll-behavior: smooth;
 }
-/* Default Light Mode */
-body {
-  background-color: white;
-  color: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Dark Mode */
-body.dark-mode {
-  background-color: #121212;
-  color: white;
+html,
+body {
+  overscroll-behavior: none;
+  background-color: white;
+  color: black;
 }
 
 .bg-white.dark-mode {
