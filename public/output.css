@@ -3030,6 +3030,14 @@ button {
     margin-left: 5rem;
   }
 
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
