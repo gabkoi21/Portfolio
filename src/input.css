@@ -72,6 +72,21 @@ button {
   right: 0;
 }
 
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideFromTop 1s ease-out forwards;
+}
+
 @layer components {
   .pop-up {
     @apply transition-transform duration-500 ease-in-out transform;

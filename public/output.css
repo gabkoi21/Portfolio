@@ -1443,11 +1443,6 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.primary-bg-color {
-  /* color: #020617; */
-  background: #020617;
-}
-
 .primary-color {
   color: #020617;
 }
@@ -1734,6 +1729,10 @@ input:checked + .toggle-bg {
 
 .h-\[350px\] {
   height: 350px;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-auto {
@@ -2454,6 +2453,22 @@ button {
   right: 0;
 }
 
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideFromTop 1s ease-out forwards;
+}
+
 /* Add a shadow to the navbar when scrolled */
 
 .navbar-scrolled {
@@ -2496,6 +2511,11 @@ button {
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 100 242 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-blue-800:hover {
@@ -2715,6 +2735,10 @@ button {
     margin-top: 2.5rem;
   }
 
+  .sm\:h-\[45vh\] {
+    height: 45vh;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -2804,6 +2828,10 @@ button {
 
   .md\:h-\[390px\] {
     height: 390px;
+  }
+
+  .md\:h-\[50vh\] {
+    height: 50vh;
   }
 
   .md\:w-1\/2 {
@@ -2959,6 +2987,10 @@ button {
     margin-top: 4rem;
   }
 
+  .lg\:inline {
+    display: inline;
+  }
+
   .lg\:inline-flex {
     display: inline-flex;
   }
@@ -2973,6 +3005,10 @@ button {
 
   .lg\:h-\[500px\] {
     height: 500px;
+  }
+
+  .lg\:h-\[50vh\] {
+    height: 50vh;
   }
 
   .lg\:w-1\/2 {
@@ -3050,6 +3086,14 @@ button {
     margin-top: 10rem;
   }
 
+  .xl\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .xl\:h-\[40vh\] {
+    height: 40vh;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -3072,6 +3116,11 @@ button {
 
   .xl\:p-10 {
     padding: 2.5rem;
+  }
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .xl\:py-10 {
@@ -3103,6 +3152,24 @@ button {
 
   .\32xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .\32xl\:inline {
+    display: inline;
+  }
+
+  .\32xl\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .\32xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
