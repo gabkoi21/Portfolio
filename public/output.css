@@ -1584,6 +1584,10 @@ input:checked + .toggle-bg {
   margin-top: -2.5rem;
 }
 
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
 .-mt-6 {
   margin-top: -1.5rem;
 }
@@ -1698,6 +1702,10 @@ input:checked + .toggle-bg {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
 }
 
 .h-4 {
@@ -2096,6 +2104,10 @@ input:checked + .toggle-bg {
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -2756,6 +2768,11 @@ button {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -3082,6 +3099,10 @@ button {
   .\32xl\:mx-48 {
     margin-left: 12rem;
     margin-right: 12rem;
+  }
+
+  .\32xl\:mt-0 {
+    margin-top: 0px;
   }
 }
 

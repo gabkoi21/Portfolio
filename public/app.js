@@ -59,6 +59,9 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevents the page from refreshing on form submission
 
+    // Clear the form fields instantly
+    document.getElementById("contact-form").reset();
+
     const templateParams = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
@@ -74,19 +77,11 @@ document
     emailjs
       .send(SERVICEID, TEMPLATEID, templateParams)
       .then((res) => {
-        // Reset form fields
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("message").value = "";
-        document.getElementById("email").value, console.log(res);
+        console.log(res);
         // alert("Your message has been sent successfully!");
-
-        // Clear the form fields
-        document.getElementById("contact-form").reset();
       })
       .catch((err) => {
         console.log(err);
-        alert("Something went wrong. Please try again.");
+        // alert("Something went wrong. Please try again.");
       });
   });
